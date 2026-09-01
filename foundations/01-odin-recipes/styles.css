@@ -39,4 +39,18 @@ a:hover {
     text-decoration: underline;
 }
 
-/* ------------ perfect-sandwich.html ------------ */
+/* ------------ recipes ------------ */
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+}
