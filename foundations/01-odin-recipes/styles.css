@@ -1,0 +1,23 @@
+/* ------------ index.html ------------ */
+
+.main-index {
+    background-image: url(images/adventure-time-background.jpg);
+    background-size: cover;
+
+    text-align: center;
+}
+
+ul#recipe-list {
+    border: 1px solid black;
+
+    list-style-type: none;
+}
+
+#logo {
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ------------ perfect-sandwich.html ------------ */
