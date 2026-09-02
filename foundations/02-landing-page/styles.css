@@ -1,0 +1,38 @@
+/* ---------- GLOBAL ---------- */
+
+body {
+    margin: 0;
+}
+
+/* ---------- HEADER ---------- */
+
+#header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: #1F2937;
+    color: #F9FAF8;
+}
+
+#logo-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#navbar {
+    display: flex;
+    gap: 10px;
+
+    list-style-type: none;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: #F9FAF8;
+}
+
+a:hover {
+    text-decoration: underline;
+}
