@@ -13,7 +13,7 @@ body {
     align-items: center;
     justify-content: space-around;
 
-    padding: 10px;
+    padding: 10px 135px;
 
     background-color: #1F2937;
     color: #F9FAF8;
@@ -48,7 +48,7 @@ a:hover {
     align-items: center;
     justify-content: center;
 
-    padding: 100px;
+    padding: 50px 350px;
 
     background-color: #1F2937;
 
@@ -66,14 +66,16 @@ a:hover {
     color: #E5E7EB;
 }
 
-.hero-item {
+.hero-item,
+.hero-item img {
     flex: 1;
     height: 200px;
 }
 
-.hero-item img {
-    flex: 1;
-    height: 200px;
+.hero-item:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button {
@@ -87,4 +89,6 @@ a:hover {
 
     font-weight: bold;
     color: #E5E7EB;
+
+    cursor: pointer;
 }
