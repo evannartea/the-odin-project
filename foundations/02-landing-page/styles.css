@@ -49,6 +49,8 @@ a:hover {
     align-items: center;
     gap: 30px;
 
+    height: 300px;
+
     padding: 50px 350px;
 
     background-color: #1F2937;
@@ -103,7 +105,7 @@ a:hover {
     align-items: center;
     gap: 20px;
 
-    padding: 50px;
+    padding: 50px 0 0;
 }
 
 #info-heading {
@@ -127,4 +129,30 @@ a:hover {
 
     text-align: center;
     color:  grey;
+}
+
+/* ---------- QUOTE SECTION ---------- */
+
+#quote-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 75px;
+
+    background-color: #E5E7EB;
+}
+
+#quote-text {
+    width: 740px;
+
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937;
+}
+
+#quote-src {
+    font-weight: bold;
 }
