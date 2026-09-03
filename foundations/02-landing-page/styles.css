@@ -13,6 +13,8 @@ body {
     justify-content: space-around;
     align-items: center;
 
+    height: 75px;
+
     padding: 10px 145px;
 
     background-color: #1F2937;
@@ -72,7 +74,7 @@ a:hover {
 .hero-item,
 .hero-item img {
     flex: 1;
-    height: 200px;
+    height: 275px;
 }
 
 .hero-item:last-child {
@@ -155,4 +157,18 @@ a:hover {
 
 #quote-src {
     font-weight: bold;
+}
+
+/* ---------- FOOTER ---------- */
+
+#footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 75px;
+
+    background-color: #1F2937;
+
+    color: #F9FAF8;
 }
