@@ -13,7 +13,7 @@ body {
     justify-content: space-around;
     align-items: center;
 
-    padding: 10px 135px;
+    padding: 10px 145px;
 
     background-color: #1F2937;
     color: #F9FAF8;
@@ -47,6 +47,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30px;
 
     padding: 50px 350px;
 
