@@ -4,7 +4,7 @@ function camelise(str) {
 
     // Capitalise elements excluding first
     const capitalised = strArray.slice(1).map(function(word) {
-        return word[0]?.toUpperCase() + word.slice(1)
+        return word[0].toUpperCase() + word.slice(1)
     })
 
     // Combine first element with capitalised elements
