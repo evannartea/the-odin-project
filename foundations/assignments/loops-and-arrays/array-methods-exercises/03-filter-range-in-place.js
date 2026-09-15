@@ -1,6 +1,6 @@
 function filterRangeInPlace(arr, a, b) {
     return arr.filter(function(element) {
-        return (a <= element && element <= b)
+        return (a <= element && element <= b);
     })
 }
 
