@@ -2,7 +2,7 @@ function shuffle(arr) {
     const randomElement = Math.floor(Math.random() * arr.length)
 
     return randomElement
-}
+};
 
 let arr = [1, 2, 3];
 

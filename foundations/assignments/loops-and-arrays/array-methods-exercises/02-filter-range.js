@@ -11,7 +11,7 @@ function filterRange(arr, a, b) {
     }
 
     return filteredArr;
-}
+};
 
 let arr = [5, 3, 8, 1];
 

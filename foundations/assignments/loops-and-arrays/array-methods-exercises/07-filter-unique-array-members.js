@@ -2,7 +2,7 @@ function unique(arr) {
     return arr.filter(function(str, index, array) {
         return array.indexOf(str) === index;
     });
-}
+};
 
 let strings = [
     "Hare", "Krishna", "Hare", "Krishna",

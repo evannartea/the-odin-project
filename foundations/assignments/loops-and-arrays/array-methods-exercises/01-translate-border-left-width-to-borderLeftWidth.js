@@ -11,7 +11,7 @@ function camelise(str) {
     const camelCase = strArray[0] + capitalised.join("");
 
     return camelCase;
-}
+};
 
 console.log(camelise("background-colour"));
 console.log(camelise("list-style-image"));

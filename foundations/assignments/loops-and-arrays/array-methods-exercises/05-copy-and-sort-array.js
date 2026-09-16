@@ -1,6 +1,6 @@
 function copySorted(arr) {
     // dawg i don't know
-}
+};
 
 let arr = ["HTML", "JavaScript", "CSS"];
 
