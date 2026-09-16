@@ -22,7 +22,11 @@ str[i] -> str[str.length - (i + 1)]
 */
 
 /*
-solution:
+solutions:
+
+const reverseString = function (string) {
+    return string.split("").reverse().join("");
+};
 
 const reverseString = function (string) {
     let reversedString = "";
