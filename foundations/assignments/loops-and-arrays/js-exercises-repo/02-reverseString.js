@@ -5,7 +5,7 @@ const reverseString = function(str) {
         reversed += str[str.length - (i + 1)]
     }
     return reversed;
-}
+};
 
 console.log(reverseString("hello there"));
 
