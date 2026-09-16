@@ -9,7 +9,7 @@ const sumAll = function(startNum, endNum) {
     let sum = 0;
 
     for (let i = 0; i < endNum; i++) {
-        counter += (startNum + i);
+        sum += (startNum + i);
     }
     return sum;
 };
