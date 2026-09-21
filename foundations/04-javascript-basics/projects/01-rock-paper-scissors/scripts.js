@@ -1,4 +1,15 @@
 const choices = ["rock", "paper", "scissors"];
+const rockBtn = document.createElement("button");
+const paperBtn = document.createElement("button");
+const scissorsBtn = document.createElement("button");
+const body = document.querySelector("body");
+
+rockBtn.textContent = `${capitaliseString(choices[0])}`;
+paperBtn.textContent = `${capitaliseString(choices[1])}`;
+scissorsBtn.textContent = `${capitaliseString(choices[2])}`;
+body.appendChild(rockBtn);
+body.appendChild(paperBtn);
+body.appendChild(scissorsBtn);
 
 // Function to get computer's choice
 function getComputerChoice() {
@@ -16,13 +27,13 @@ function getPlayerChoice() {
 
 // Function to capitalise strings
 function capitaliseString(str) {
-    const firstLetter = str[0].toUpperCase()
-    let otherLetters = ""
+    const firstLetter = str[0].toUpperCase();
+    let otherLetters = "";
 
     for (let i = 1; i < str.length; i++) {
-        otherLetters += str[i].toLowerCase()
+        otherLetters += str[i].toLowerCase();
     }
-    return `${firstLetter}${otherLetters}`
+    return `${firstLetter}${otherLetters}`;
 }
 
 function playGame() {
@@ -55,8 +66,6 @@ function playGame() {
         }
     }
 
-    
-
     // // Play 5 rounds
     // for (i = 0; i < 5; i++) {
     //     const playerSelection = getplayerChoice();
@@ -69,14 +78,14 @@ function playGame() {
 
     // Declare winner
     if (playerScore > computerScore) {
-        console.log("Player wins the game!")
+        console.log("Player wins the game!");
     }
     else if (computerScore > playerScore) {
-        console.log("Computer wins the game!")
+        console.log("Computer wins the game!");
     }
     else {
-        console.log("It's a draw!")
-    }
-}
+        console.log("It's a draw!");
+    };
+};
 
-playGame()
+playGame();
