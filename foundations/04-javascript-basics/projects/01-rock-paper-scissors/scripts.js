@@ -29,6 +29,7 @@ function playGame() {
     // Declare score variables
     let playerScore = 0;
     let computerScore = 0;
+    let targerScore = 5;
 
     // Create buttons for each selection
     rockBtn.textContent = `${capitaliseString(choices[0])}`;
@@ -45,7 +46,11 @@ function playGame() {
     const choiceBtns = document.querySelectorAll("button");
     const currentScore = document.createElement("div");
     const roundSummary = document.createElement("div");
-    
+    const winner = document.createElement("h2");
+
+    body.appendChild(roundSummary);
+    body.appendChild(currentScore);
+    body.appendChild(winner);
 
     choiceBtns.forEach(function(btn) {
         btn.addEventListener("click", function() {
@@ -54,16 +59,16 @@ function playGame() {
 
             playRound(playerSelection, computerSelection);
 
-            currentScore.textContent = `Player: ${playerScore}\nComputer: ${computerScore}`;
-            body.appendChild(currentScore);
+            currentScore.textContent = `Player: ${playerScore} | Computer: ${computerScore}`;
+
+            checkWinner();
         });
     });
 
     function playRound(playerChoice, computerChoice) {
         // If round is draw
         if (playerChoice.toLowerCase() === computerChoice) {
-            roundSummary.textContent = "Draw!";
-            body.appendChild(roundSummary);
+            roundSummary.textContent = `Draw! You both chose ${capitaliseString(playerChoice)}!`;
         }
         // If player beats computer
         else if (
@@ -72,8 +77,7 @@ function playGame() {
             (playerChoice.toLowerCase() === "scissors" && computerChoice === "paper")
         ) {
             // Log win message
-            roundSummary.textContent = `You win this round! ${ capitaliseString(playerChoice) } beats ${ capitaliseString(computerChoice)}!`;
-            body.appendChild(roundSummary);
+            roundSummary.textContent = `You win this round! ${capitaliseString(playerChoice)} beats ${capitaliseString(computerChoice)}!`;
 
             // Increment player score
             playerScore++;
@@ -82,22 +86,28 @@ function playGame() {
         else {
             // Log lose message
             roundSummary.textContent = `You lose this round! ${capitaliseString(computerChoice)} beats ${capitaliseString(playerChoice)}!`
-            body.appendChild(roundSummary);
             
             // Increment computer score
             computerScore++;
         }
     }
 
-    // Declare winner
-    if (playerScore > computerScore) {
-        console.log("Player wins the game!");
-    }
-    else if (computerScore > playerScore) {
-        console.log("Computer wins the game!");
-    }
-    else {
-        console.log("It's a draw!");
+    // Function to check winner for game
+    function checkWinner() {
+        if (playerScore === targerScore) {
+            winner.textContent = "Player wins the game!";
+            body.removeChild(roundSummary);
+            body.removeChild(rockBtn);
+            body.removeChild(paperBtn);
+            body.removeChild(scissorsBtn);
+        }
+        else if (computerScore === targerScore) {
+            winner.textContent = "Computer wins the game!";
+            body.removeChild(roundSummary);
+            body.removeChild(rockBtn);
+            body.removeChild(paperBtn);
+            body.removeChild(scissorsBtn);
+        }
     };
 };
 
