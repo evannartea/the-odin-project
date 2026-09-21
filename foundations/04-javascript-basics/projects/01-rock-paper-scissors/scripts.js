@@ -8,8 +8,8 @@ function getComputerChoice() {
     return choices[randomElement];
 }
 
-// Function to get human's choice
-function getHumanChoice() {
+// Function to get player's choice
+function getPlayerChoice() {
     // Prompt user input for choice
     return prompt("Choose Rock, Paper, or Scissors: ");
 }
@@ -22,53 +22,56 @@ function capitaliseString(str) {
     for (let i = 1; i < str.length; i++) {
         otherLetters += str[i].toLowerCase()
     }
-
     return `${firstLetter}${otherLetters}`
 }
 
 function playGame() {
     // Declare score variables
-    let humanScore = 0;
+    let playerScore = 0;
     let computerScore = 0;
 
-    function playRound(humanChoice, computerChoice) {
+    function playRound(playerChoice, computerChoice) {
         // If round is draw
-        if (humanChoice.toLowerCase() === computerChoice) {
+        if (playerChoice.toLowerCase() === computerChoice) {
             console.log("Draw!");
         }
-        // If human beats computer
+        // If player beats computer
         else if (
-            (humanChoice.toLowerCase() === "rock" && computerChoice === "scissors") ||
-            (humanChoice.toLowerCase() === "paper" && computerChoice === "rock") ||
-            (humanChoice.toLowerCase() === "scissors" && computerChoice === "paper")
+            (playerChoice.toLowerCase() === "rock" && computerChoice === "scissors") ||
+            (playerChoice.toLowerCase() === "paper" && computerChoice === "rock") ||
+            (playerChoice.toLowerCase() === "scissors" && computerChoice === "paper")
         ) {
             // Log win message
-            console.log(`You win this round! ${capitaliseString(humanChoice)} beats ${capitaliseString(computerChoice)}!`);
-            // Increment human score
-            humanScore++;
+            console.log(`You win this round! ${capitaliseString(playerChoice)} beats ${capitaliseString(computerChoice)}!`);
+            // Increment player score
+            playerScore++;
         }
-        // If computer beats human
+        // If computer beats player
         else {
             // Log lose message
-            console.log(`You lose this round! ${capitaliseString(computerChoice)} beats ${capitaliseString(humanChoice)}!`);
+            console.log(`You lose this round! ${capitaliseString(computerChoice)} beats ${capitaliseString(playerChoice)}!`);
             // Increment computer score
             computerScore++;
         }
     }
 
-    for (i = 0; i < 5; i++) {
-        const humanSelection = getHumanChoice();
-        const computerSelection = getComputerChoice();
+    
 
-        playRound(humanSelection, computerSelection);
+    // // Play 5 rounds
+    // for (i = 0; i < 5; i++) {
+    //     const playerSelection = getplayerChoice();
+    //     const computerSelection = getComputerChoice();
 
-        console.log(`Player: ${humanScore}\nComputer: ${computerScore}`);
-    }
+    //     playRound(playerSelection, computerSelection);
 
-    if (humanScore > computerScore) {
+    //     console.log(`Player: ${playerScore}\nComputer: ${computerScore}`);
+    // }
+
+    // Declare winner
+    if (playerScore > computerScore) {
         console.log("Player wins the game!")
     }
-    else if (computerScore > humanScore) {
+    else if (computerScore > playerScore) {
         console.log("Computer wins the game!")
     }
     else {
