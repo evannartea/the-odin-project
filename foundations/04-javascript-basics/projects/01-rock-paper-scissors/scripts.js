@@ -1,11 +1,10 @@
 const choices = ["rock", "paper", "scissors"];
 const rockBtn = document.createElement("button");
-rockBtn.id = "rock";
 const paperBtn = document.createElement("button");
-paperBtn.id = "paper";
 const scissorsBtn = document.createElement("button");
+rockBtn.id = "rock";
+paperBtn.id = "paper";
 scissorsBtn.id = "scissors";
-const body = document.querySelector("body");
 
 // Function to get computer's choice
 function getComputerChoice() {
@@ -14,12 +13,6 @@ function getComputerChoice() {
 
     return choices[randomElement];
 }
-
-// // Function to get player's choice
-// function getPlayerChoice() {
-//     // Prompt user input for choice
-//     return prompt("Choose Rock, Paper, or Scissors: ");
-// }
 
 // Function to capitalise strings
 function capitaliseString(str) {
@@ -43,22 +36,34 @@ function playGame() {
     scissorsBtn.textContent = `${capitaliseString(choices[2])}`;
 
     // Append to DOM
+    const body = document.querySelector("body");
     body.appendChild(rockBtn);
     body.appendChild(paperBtn);
     body.appendChild(scissorsBtn);
 
+    // Add event to playRound once button is clicked
     const choiceBtns = document.querySelectorAll("button");
+    const currentScore = document.createElement("div");
+    const roundSummary = document.createElement("div");
+    
 
     choiceBtns.forEach(function(btn) {
         btn.addEventListener("click", function() {
-            console.log(btn.id);
+            const playerSelection = btn.id;
+            const computerSelection = getComputerChoice();
+
+            playRound(playerSelection, computerSelection);
+
+            currentScore.textContent = `Player: ${playerScore}\nComputer: ${computerScore}`;
+            body.appendChild(currentScore);
         });
     });
 
     function playRound(playerChoice, computerChoice) {
         // If round is draw
         if (playerChoice.toLowerCase() === computerChoice) {
-            console.log("Draw!");
+            roundSummary.textContent = "Draw!";
+            body.appendChild(roundSummary);
         }
         // If player beats computer
         else if (
@@ -67,28 +72,22 @@ function playGame() {
             (playerChoice.toLowerCase() === "scissors" && computerChoice === "paper")
         ) {
             // Log win message
-            console.log(`You win this round! ${capitaliseString(playerChoice)} beats ${capitaliseString(computerChoice)}!`);
+            roundSummary.textContent = `You win this round! ${ capitaliseString(playerChoice) } beats ${ capitaliseString(computerChoice)}!`;
+            body.appendChild(roundSummary);
+
             // Increment player score
             playerScore++;
         }
         // If computer beats player
         else {
             // Log lose message
-            console.log(`You lose this round! ${capitaliseString(computerChoice)} beats ${capitaliseString(playerChoice)}!`);
+            roundSummary.textContent = `You lose this round! ${capitaliseString(computerChoice)} beats ${capitaliseString(playerChoice)}!`
+            body.appendChild(roundSummary);
+            
             // Increment computer score
             computerScore++;
         }
     }
-
-    // // Play 5 rounds
-    // for (i = 0; i < 5; i++) {
-    //     const playerSelection = getplayerChoice();
-    //     const computerSelection = getComputerChoice();
-
-    //     playRound(playerSelection, computerSelection);
-
-    //     console.log(`Player: ${playerScore}\nComputer: ${computerScore}`);
-    // }
 
     // Declare winner
     if (playerScore > computerScore) {
