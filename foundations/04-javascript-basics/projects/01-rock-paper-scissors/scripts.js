@@ -1,15 +1,11 @@
 const choices = ["rock", "paper", "scissors"];
 const rockBtn = document.createElement("button");
+rockBtn.id = "rock";
 const paperBtn = document.createElement("button");
+paperBtn.id = "paper";
 const scissorsBtn = document.createElement("button");
+scissorsBtn.id = "scissors";
 const body = document.querySelector("body");
-
-rockBtn.textContent = `${capitaliseString(choices[0])}`;
-paperBtn.textContent = `${capitaliseString(choices[1])}`;
-scissorsBtn.textContent = `${capitaliseString(choices[2])}`;
-body.appendChild(rockBtn);
-body.appendChild(paperBtn);
-body.appendChild(scissorsBtn);
 
 // Function to get computer's choice
 function getComputerChoice() {
@@ -19,11 +15,11 @@ function getComputerChoice() {
     return choices[randomElement];
 }
 
-// Function to get player's choice
-function getPlayerChoice() {
-    // Prompt user input for choice
-    return prompt("Choose Rock, Paper, or Scissors: ");
-}
+// // Function to get player's choice
+// function getPlayerChoice() {
+//     // Prompt user input for choice
+//     return prompt("Choose Rock, Paper, or Scissors: ");
+// }
 
 // Function to capitalise strings
 function capitaliseString(str) {
@@ -40,6 +36,24 @@ function playGame() {
     // Declare score variables
     let playerScore = 0;
     let computerScore = 0;
+
+    // Create buttons for each selection
+    rockBtn.textContent = `${capitaliseString(choices[0])}`;
+    paperBtn.textContent = `${capitaliseString(choices[1])}`;
+    scissorsBtn.textContent = `${capitaliseString(choices[2])}`;
+
+    // Append to DOM
+    body.appendChild(rockBtn);
+    body.appendChild(paperBtn);
+    body.appendChild(scissorsBtn);
+
+    const choiceBtns = document.querySelectorAll("button");
+
+    choiceBtns.forEach(function(btn) {
+        btn.addEventListener("click", function() {
+            console.log(btn.id);
+        });
+    });
 
     function playRound(playerChoice, computerChoice) {
         // If round is draw
