@@ -1,4 +1,9 @@
+/* ---------- Fonts ----------*/
+
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap");
+
+/* ---------- Global ----------*/
 
 body {
     display: flex;
@@ -17,7 +22,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
 
     width: 945px;
     height: 756px;
@@ -36,28 +40,35 @@ body {
     background-color: #D3D3D3;
 }
 
-.header {
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    gap: 50px;
 
-    min-width: 500px;
+    margin: 35px 0;
 
-    font-family: 'Lobster';
     color: #D4AF37;
 }
 
 #header-item-1,
 #header-item-3 {
-    font-size: large;
-    font-weight: bold;
+    font-family: 'Jost';
+    font-size: 25px;
+    font-weight:bolder;
+    font-style: italic;
 }
 
 #header-item-2 {
-    font-size: xx-large;
+    letter-spacing: 3px;
+    font-family: 'Lobster';
+    font-size: 50px;
+    font-weight: lighter;
 }
 
 
-.panel {
+.panel-container {
     display: flex;
+
+    margin: auto;
 }
