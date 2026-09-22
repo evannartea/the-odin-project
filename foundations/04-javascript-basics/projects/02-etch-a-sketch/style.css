@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 body {
     display: flex;
     justify-content: center;
@@ -9,14 +11,18 @@ body {
 /* ---------- Decorative Elements ----------*/
 
 #frame-wrapper {
+    position: relative;
+
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 50px;
 
     width: 945px;
     height: 756px;
 
-    border-radius: 5px;
+    border-radius: 10px;
 
     background-color: #D61C24;
 }
@@ -27,7 +33,31 @@ body {
 
     border-radius: 20px;
 
-    background-color: grey;
+    background-color: #D3D3D3;
+}
 
-    transform: translateY(-15px);
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    min-width: 500px;
+
+    font-family: 'Lobster';
+    color: #D4AF37;
+}
+
+#header-item-1,
+#header-item-3 {
+    font-size: large;
+    font-weight: bold;
+}
+
+#header-item-2 {
+    font-size: xx-large;
+}
+
+
+.panel {
+    display: flex;
 }
