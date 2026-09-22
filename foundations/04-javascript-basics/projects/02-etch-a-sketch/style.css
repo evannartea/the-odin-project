@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+/* ---------- Decorative Elements ----------*/
+
+#frame-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 945px;
+    height: 756px;
+
+    border-radius: 5px;
+
+    background-color: #D61C24;
+}
+
+#screen-wrapper {
+    width: 685px;
+    height: 466px;
+
+    border-radius: 20px;
+
+    background-color: grey;
+
+    transform: translateY(-15px);
+}
