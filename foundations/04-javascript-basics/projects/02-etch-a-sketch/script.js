@@ -27,7 +27,7 @@ function generateGrid(n) {
                 height: ${100/n}%;
 
                 box-sizing: border-box;
-                border: 0.5px solid #D3D3D3;
+                //border: 0.5px solid black;
             `;
 
             changeColourOnHover(gridTile);
@@ -40,7 +40,6 @@ function generateGrid(n) {
 function changeColourOnHover(element) {
     element.addEventListener("mouseover", function(event) {
         event.target.style.backgroundColor = "grey";
-        event.target.style.borderColor = "grey";
     });
 };
 
