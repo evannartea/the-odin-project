@@ -4,6 +4,7 @@ const rangeValue = document.querySelector("#range-value");
 const MIN_GRID_SIZE = 16;
 
 generateGrid(MIN_GRID_SIZE);
+rangeValue.textContent = `${MIN_GRID_SIZE}x${MIN_GRID_SIZE} GRID`;
 
 // Function to generate nxn grid of divs
 /*
@@ -50,4 +51,3 @@ rangeSlider.addEventListener("input", function() {
     // Change range value according to slider
     rangeValue.textContent = `${rangeSlider.value}x${rangeSlider.value} GRID`;
 });
-
