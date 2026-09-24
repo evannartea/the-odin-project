@@ -21,7 +21,7 @@ function generateGrid(n) {
     for (let i = 0; i < n; i++) {
         for (let j = 0; j < n; j++) {
             const gridTile = document.createElement("div");
-            gridTile.classList.add("grid-tile");
+            
             gridTile.style.cssText = `
                 width: ${100/n}%;
                 height: ${100/n}%;
