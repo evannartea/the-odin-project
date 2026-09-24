@@ -37,8 +37,8 @@ function generateGrid(n) {
 };
 
 // Function to change colour of <div>
-function changeColourOnHover(element) {
-    element.addEventListener("mouseover", function(event) {
+function changeColourOnHover(object) {
+    object.addEventListener("mouseover", function(event) {
         event.target.style.backgroundColor = "grey";
         event.target.style.borderColor = "grey";
     });
