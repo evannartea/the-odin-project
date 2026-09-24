@@ -1,4 +1,9 @@
 const screenContainer = document.querySelector("#screen-container");
+const rangeSlider = document.querySelector("#range-slider");
+const rangeValue = document.querySelector("#range-value");
+const MIN_GRID_SIZE = 16;
+
+generateGrid(MIN_GRID_SIZE);
 
 // Function to generate nxn grid of divs
 /*
@@ -10,6 +15,8 @@ const screenContainer = document.querySelector("#screen-container");
 nxn grid -> 100/n% w*h
 */
 function generateGrid(n) {
+    screenContainer.innerHTML = "";
+    
     for (let i = 0; i < n; i++) {
         for (let j = 0; j < n; j++) {
             const gridTile = document.createElement("div");
@@ -32,7 +39,15 @@ function generateGrid(n) {
 function changeColourOnHover(element) {
     element.addEventListener("mouseover", function(event) {
         event.target.style.backgroundColor = "grey";
+        event.target.style.borderColor = "grey";
     });
 };
 
-generateGrid(64);
+// Change grid size according to slider
+rangeSlider.addEventListener("input", function() {
+    generateGrid(rangeSlider.value)
+
+    // Change range value according to slider
+    rangeValue.textContent = `${rangeSlider.value}x${rangeSlider.value} GRID`;
+});
+
