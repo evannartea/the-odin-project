@@ -63,6 +63,7 @@ body {
 
 #screen-container {
     display: flex;
+    flex-wrap: wrap;
 
     width: 685px;
     height: 466px;
