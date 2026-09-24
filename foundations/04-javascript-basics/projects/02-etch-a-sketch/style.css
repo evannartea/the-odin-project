@@ -76,6 +76,7 @@ body {
 .panel-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 250px;
 
     margin: auto;
