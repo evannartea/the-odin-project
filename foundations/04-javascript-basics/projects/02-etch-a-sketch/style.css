@@ -75,6 +75,17 @@ body {
 
 .panel-container {
     display: flex;
+    justify-content: space-between;
+    gap: 250px;
 
     margin: auto;
+}
+
+.dial {
+    width: 125px;
+    height: 125px;
+
+    border-radius: 50%;
+
+    background-color: white;
 }
