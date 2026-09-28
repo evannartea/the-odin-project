@@ -9,8 +9,8 @@ function groupById(arr) {
         const id = person.id;
         groupedUsers[id] = person;
         return groupedUsers;
-    }, {})
-};
+    }, {});
+}
 
 let usersById = groupById(users);
 

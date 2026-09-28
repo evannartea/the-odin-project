@@ -9,7 +9,7 @@ function getAverageAge(arr) {
    .map(user => user.age)
    .reduce((a, b) => a + b)
    /arr.length;
-};
+}
 
 console.log(getAverageAge(users));
 

@@ -9,7 +9,7 @@ let usersMapped = users.map(function( { name, surname, id } ) {
         fullName: `${name} ${surname}`,
         id
     };
-});
+})
 
 /*
 usersMapped = [

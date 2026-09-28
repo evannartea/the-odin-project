@@ -8,7 +8,7 @@ function sortByAge(arr) {
     return arr.sort(function(a, b) {
         return a.age - b.age;
     });
-};
+}
 
 console.log(sortByAge(users));
 
