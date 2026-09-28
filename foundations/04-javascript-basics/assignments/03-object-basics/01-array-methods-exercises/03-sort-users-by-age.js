@@ -14,12 +14,14 @@ let mary = {
 let arr = [ pete, john, mary ];
 
 function sortByAge(users) {
-    return users;
+    return users.sort(function(a, b) {
+        return a.age - b.age;
+    });
 };
 
 console.log(sortByAge(arr));
 
-// console.log(arr[0].name); // John
-// console.log(arr[1].name); // Mary
-// console.log(arr[2].name); // Pete
+console.log(arr[0].name); // John
+console.log(arr[1].name); // Mary
+console.log(arr[2].name); // Pete
 
