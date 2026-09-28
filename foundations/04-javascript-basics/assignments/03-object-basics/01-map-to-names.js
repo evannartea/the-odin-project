@@ -11,7 +11,7 @@ let mary = {
     age: 28
 };
 
-let users = [john, pete, mary];
+let users = [ john, pete, mary ];
 
 let names = users.map(function(user) {
     return user.name;
