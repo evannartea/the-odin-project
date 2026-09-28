@@ -7,8 +7,7 @@ let users = [
 function groupById(arr) {
     return arr.reduce((groupedUsers, person) => {
         const id = person.id;
-        groupedUsers[id] = [];
-        groupedUsers[id].push(person);
+        groupedUsers[id] = person;
         return groupedUsers;
     }, {})
 };
