@@ -1,15 +1,6 @@
-let pete = {
-    name: "Pete",
-    age: 30
-};
-let john = {
-    name: "John",
-    age: 25
-};
-let mary = {
-    name: "Mary",
-    age: 28
-};
+let pete = { name: "Pete", age: 30 };
+let john = { name: "John", age: 25 };
+let mary = { name: "Mary", age: 28 };
 
 let users = [ pete, john, mary ];
 
