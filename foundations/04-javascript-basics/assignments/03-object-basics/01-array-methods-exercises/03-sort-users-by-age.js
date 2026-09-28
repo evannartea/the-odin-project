@@ -11,17 +11,17 @@ let mary = {
     age: 28
 };
 
-let arr = [ pete, john, mary ];
+let users = [ pete, john, mary ];
 
-function sortByAge(users) {
-    return users.sort(function(a, b) {
+function sortByAge(arr) {
+    return arr.sort(function(a, b) {
         return a.age - b.age;
     });
 };
 
-console.log(sortByAge(arr));
+console.log(sortByAge(users));
 
-console.log(arr[0].name); // John
-console.log(arr[1].name); // Mary
-console.log(arr[2].name); // Pete
+console.log(users[0].name); // John
+console.log(users[1].name); // Mary
+console.log(users[2].name); // Pete
 
