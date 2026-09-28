@@ -64,12 +64,12 @@ const sortedByLastName = people.sort((a, b) => {
 // 8. Reduce Exercise
 // Sum up the instances of each of these
 const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck'];
-const groupedByTransport = data.reduce((groupedTransport, transport) => {
-    if (!groupedTransport[transport]) {
-        groupedTransport[transport] = 0;
+const groupedByTransport = data.reduce((totals, transport) => {
+    if (!totals[transport]) {
+        totals[transport] = 0;
     }
-    groupedTransport[transport]++;
-    return groupedTransport
+    totals[transport]++;
+    return totals;
 }, {});
 
 console.log(groupedByTransport);
