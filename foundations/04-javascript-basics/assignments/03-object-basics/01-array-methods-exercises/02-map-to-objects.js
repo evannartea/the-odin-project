@@ -33,4 +33,9 @@ let usersMapped = users.map(function(user) {
         id: user.id
     };
 });
+
+let usersMapped = users.map(user => ({
+    fullName: `${user.name} ${user.surname}`,
+    id: user.id
+}));
 */
