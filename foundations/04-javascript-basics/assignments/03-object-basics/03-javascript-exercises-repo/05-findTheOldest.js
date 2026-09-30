@@ -17,7 +17,6 @@ function findTheOldest(arr) {
         if (!person.yearOfDeath) {
             person.yearOfDeath = currentYear;
         }
-
         if (!oldest.yearOfDeath) {
             oldest.yearOfDeath =  currentYear;
         }
