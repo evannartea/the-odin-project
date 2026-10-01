@@ -1,0 +1,25 @@
+/* ---------- Fonts ----------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* ---------- Global ----------*/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+/* ---------- Frame ----------*/
+
+#frame-wrapper {
+    width: 600px;
+    height: 800px;
+
+    border: 1px solid black;
+    border-radius: 25px;
+
+    background-color: #25AD9F;
+}
