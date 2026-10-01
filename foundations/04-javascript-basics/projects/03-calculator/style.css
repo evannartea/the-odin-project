@@ -21,7 +21,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 
     width: 600px;
     height: 800px;
@@ -35,6 +35,10 @@ body {
 /* ---------- Screen ----------*/
 
 #screen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 500px;
     height: 250px;
 
@@ -48,9 +52,9 @@ body {
 
 #slot-container {
     display: flex;
-    justify-content: space-between;
+    gap: 75px;
 
-    width: 500px;
+    width: auto;
     height: auto;
 }
 
@@ -63,14 +67,23 @@ body {
     background-color: #044D39;
 }
 
-#slot-btn {
-    width: 25px;
-    height: 25px;
+#clear-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80px;
+    height: 30px;
 
     border: 2px solid black;
-    border-radius: 50%;
+    border-radius: 5px;
 
     background-color: #014778;
+
+    font-family:'Helvetica';
+    font-size: 12px;
+    font-weight: bolder;
+    color: white;
 }
 
 /* ---------- Keypad ----------*/
@@ -78,4 +91,6 @@ body {
 #keypad-container {
     width: auto;
     height: 350px;
+
+    border: 2px solid black;
 }
