@@ -46,6 +46,8 @@ body {
     border-radius: 25px;
 
     background-color: #B9DECA;
+
+    font-family: 'Press Start 2P';
 }
 
 /* ---------- Disc Slot ----------*/
@@ -95,30 +97,53 @@ body {
     height: 350px;
 }
 
+/* ---------- Numbers ----------*/
+
 #numbers-container {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
     
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 100%;
 }
 
-.number-key {
+.number-key,
+#equals-btn {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
 
     border: 2px solid black;
-    border-radius: 5px;
-    
-    background-color: #014778;
 
-    font-family: 'Helvetica';
-    font-size: 12px;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 20px;
     font-weight: bolder;
     color: white;
 }
+
+.number-key {
+    border-radius: 5px;
+    background-color: #014778;
+}
+
+#equals-btn {
+    border-radius: 50%;
+    background-color: #EC3B45;
+}
+
+/* ---------- Operators ----------*/
+
+#operators-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+
+    width: 250px;
+    height: 100%;
+}
+
