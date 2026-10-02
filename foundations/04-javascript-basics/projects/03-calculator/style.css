@@ -101,6 +101,8 @@ body {
 
 #numbers-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 5px;
     
@@ -114,9 +116,6 @@ body {
     justify-content: center;
     align-items: center;
 
-    width: 75px;
-    height: 75px;
-
     border: 2px solid black;
 
     font-family: 'Helvetica', sans-serif;
@@ -126,12 +125,20 @@ body {
 }
 
 .number-key {
+    width: 75px;
+    height: 75px;
+
     border-radius: 5px;
+
     background-color: #014778;
 }
 
 #equals-btn {
+    width: 80px;
+    height: 80px;
+
     border-radius: 50%;
+
     background-color: #EC3B45;
 }
 
@@ -139,11 +146,43 @@ body {
 
 #operators-container {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 5px;
 
-    width: 250px;
+    width: 100px;
     height: 100%;
 }
 
+#divide-btn,
+#multiply-btn,
+#subtract-btn,
+#add-btn {
+    width: 80px;
+    height: 80px;
+    
+    border: 2px solid black;
+    border-radius: 50%;
+
+    font-family: 'Helvetica', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+
+#divide-btn {
+    background-color: #43C1E1;
+}
+
+#multiply-btn {
+    background-color: #6CBC61;
+}
+
+#subtract-btn {
+    background-color: #00487D;
+}
+
+#add-btn {
+    background-color: #FDD14E;
+}
