@@ -110,36 +110,23 @@ body {
     height: 100%;
 }
 
-.number-key,
-#equals-btn {
+.number-key {
+    width: 75px;
+    height: 75px;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
     border: 2px solid black;
+    border-radius: 5px;
+
+    background-color: #014778;
 
     font-family: 'Helvetica', sans-serif;
     font-size: 20px;
     font-weight: bolder;
     color: white;
-}
-
-.number-key {
-    width: 75px;
-    height: 75px;
-
-    border-radius: 5px;
-
-    background-color: #014778;
-}
-
-#equals-btn {
-    width: 80px;
-    height: 80px;
-
-    border-radius: 50%;
-
-    background-color: #EC3B45;
 }
 
 /* ---------- Operators ----------*/
@@ -155,6 +142,7 @@ body {
     height: 100%;
 }
 
+#equals-btn,
 #divide-btn,
 #multiply-btn,
 #subtract-btn,
@@ -166,9 +154,13 @@ body {
     border-radius: 50%;
 
     font-family: 'Helvetica', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bolder;
     color: white;
+}
+
+#equals-btn {
+    background-color: #EC3B45;
 }
 
 #divide-btn {
@@ -186,3 +178,4 @@ body {
 #add-btn {
     background-color: #FDD14E;
 }
+
