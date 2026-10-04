@@ -21,7 +21,7 @@ body {
 
 /* ---------- Frame ----------*/
 
-#frame-container {
+.frame-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,7 +39,7 @@ body {
 
 /* ---------- Screen ----------*/
 
-#screen-container {
+.screen-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,16 +57,18 @@ body {
 
 /* ---------- Disc Slot ----------*/
 
-#slot-container {
+.slot-container {
     display: flex;
-    gap: 75px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 
     width: auto;
     height: auto;
 }
 
 #disc-slot {
-    width: 300px;
+    width: 350px;
     height: 30px;
 
     border: 2px solid black;
@@ -77,25 +79,25 @@ body {
 #clear-btn {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 
-    width: 80px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
 
     border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 50%;
 
     background-color: #014778;
 
     font-family: 'Thunderman';
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bolder;
     color: white;
 }
 
 /* ---------- Keypad ----------*/
 
-#keypad-container {
+.keypad-container {
     display: flex;
 
     width: auto;
@@ -104,7 +106,7 @@ body {
 
 /* ---------- Numbers ----------*/
 
-#numbers-container {
+.numbers-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,14 +138,8 @@ body {
 
 /* ---------- Operators ----------*/
 
-#operators-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 5px;
-
-    width: 200px;
+.operators-container {
+    width: 250px;
     height: 100%;
 }
 
@@ -159,68 +155,116 @@ body {
     border: 2px solid black;
 
     font-family: 'Thunderman';
-    font-size: 12px;
     font-weight: bolder;
     color: white;
 }
 
+.triangle-wrapper {
+    position: relative;
+    top: 50px;
+    left: 100px;
+    width: 104px;
+    /* +4px for 2px border on all sides */
+    height: 90px;
+    background-color: #000;
+    /* Border color */
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #divide-btn {
+    width: 100px;
+    height: 86px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     background-color: #43C1E1;
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 12px;
+
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 #multiply-btn {
-    width: 50px;
-    height: 50px;
+    position: relative;
+    top: 25px;
+    left: 175px;
+
+    width: 60px;
+    height: 60px;
 
     border-radius: 50%;
 
     background-color: #6CBC61;
+
+    font-size: 7px;
 }
 
 #subtract-btn {
+    position: relative;
+    left: 25px;
+    top: 20px;
+
     width: 80px;
     height: 25px;
 
-    border: 2px solid black;
     border-radius: 10px;
 
     background-color: #00487D;
+
+    font-size: 8px;
 }
 
 #add-btn {
-    background: #FDD04F;
-    height: 100px;
     position: relative;
-    width: 36px;
-
+    left: 50px;
+    
+    width: 40px;
+    height: 100px;
+    
     border: none;
+    background-color: #FDD04F;
+    
     filter: drop-shadow(2px 0 0 black) drop-shadow(-2px 0 0 black) drop-shadow(0 2px 0 black) drop-shadow(0 -2px 0 black);
 }
 
 #add-btn:after {
-    background: #FDD04F;
+    position: absolute;
     content: "";
-    height: 36px;
-
+    top: 32px;
     left: -32px;
 
-    position: absolute;
-    top: 32px;
-
     width: 100px;
+    height: 40px;
+
+    background-color: #FDD04F;
 }
 
 #add-btn span {
     position: relative;
     z-index: 2;
+
+    font-size: 12px;
 }
 
 #equals-btn {
-    width: 80px;
-    height: 80px;
+    position: relative;
+    top: 50px;
+    left: 100px;
 
-    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+
     border-radius: 50%;
 
     background-color: #EC3B45;
+
+    font-size: 12px;
 }
