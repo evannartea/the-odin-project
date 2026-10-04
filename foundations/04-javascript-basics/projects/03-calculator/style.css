@@ -161,41 +161,46 @@ body {
 
 .triangle-wrapper {
     position: relative;
-    top: 50px;
-    left: 100px;
-    width: 104px;
-    /* +4px for 2px border on all sides */
-    height: 90px;
-    background-color: #000;
-    /* Border color */
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    top: 35px;
+    left: 70px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
+    width: 104px;
+    /* +4px for 2px border on all sides */
+    height: 90px;
+
+    background-color: #000;
+    
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
 #divide-btn {
-    width: 100px;
-    height: 86px;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    background-color: #43C1E1;
-    border: none;
-    cursor: pointer;
-
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    padding-bottom: 12px;
 
-    color: white;
+    width: 100px;
+    height: 88px;
+
+    border: none;
+    padding-bottom: 15px;
+
+    background-color: #43C1E1;
+
+    font-size: 12px;
     font-weight: bold;
-    font-size: 14px;
+    color: white;
+    
+    cursor: pointer;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
 #multiply-btn {
     position: relative;
-    top: 25px;
-    left: 175px;
+    left: 200px;
 
     width: 60px;
     height: 60px;
@@ -256,7 +261,6 @@ body {
 
 #equals-btn {
     position: relative;
-    top: 50px;
     left: 100px;
 
     width: 100px;
