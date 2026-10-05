@@ -225,7 +225,7 @@ body {
 .triangle-wrapper {
     position: absolute;
     top: 190px;
-    left: 60px;
+    left: 50px;
 
     display: flex;
     justify-content: center;
@@ -258,7 +258,7 @@ body {
 
 #multiply-btn {
     top: 230px;
-    left: 200px;
+    left: 175px;
 
     width: 60px;
     height: 60px;
@@ -273,7 +273,7 @@ body {
 
 #equals-btn {
     top: 300px;
-    left: 100px;
+    left: 80px;
 
     width: 100px;
     height: 100px;
