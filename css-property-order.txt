@@ -1,0 +1,61 @@
+/* ----- CSS Property Order ----- */
+
+.properties {
+    /* ---------- Positioning ---------- */
+    position;
+    top;
+    right;
+    bottom;
+    left;
+    z-index;
+
+    /* ---------- Layout ---------- */
+    display;
+    grid-template-columns;
+    grid-template-rows;
+    grid-template-areas;
+    flex-direction;
+    justify-content;
+    align-items;
+    gap;
+
+    /* ---------- Sizing ---------- */
+    width;
+    height;
+    min-width;
+    max-width;
+    min-height;
+    max-height;
+
+    /* ---------- Box model ---------- */
+    box-sizing;
+    margin;
+    border;
+    padding;
+
+    /* ---------- Background ---------- */
+    background;
+    background-image;
+    background-position;
+    background-size;
+    background-color;
+
+    /* ---------- Typography ---------- */
+    font-family;
+    font-size;
+    font-weight;
+    font-style;
+    line-height;
+    letter-spacing;
+    text-align;
+    text-transform;
+    text-decoration;
+    color;
+
+    /* ---------- Effects ---------- */
+    box-shadow;
+    opacity;
+    transform;
+    transition;
+    animation;
+}
