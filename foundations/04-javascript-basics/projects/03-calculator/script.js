@@ -24,7 +24,7 @@ function operate(operator, num1, num2) {
 }
 
 // Function to turn array of numbers into whole number
-function arrayToNumber(arr) {
+function convertArrayToNumber(arr) {
     return arr.reduce((acc, currentValue, index) => {
         return acc + currentValue * 10**(arr.length - index - 1);
     }, 0);
