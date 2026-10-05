@@ -46,11 +46,11 @@ body {
     align-items: center;
 }
 
-#screen {
+#screen-display {
     position: relative;
 
     width: 500px;
-    height: 250px;
+    height: 275px;
 
     border: 2px solid black;
     border-radius: 25px;
@@ -82,7 +82,7 @@ body {
 #smile {
     position: absolute;
     left: 150px;
-    bottom: 50px;
+    bottom: 75px;
 
     width: 200px;
     height: 100px;
