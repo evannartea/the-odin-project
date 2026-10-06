@@ -41,8 +41,8 @@ function changeColourOnHover(element) {
 };
 
 // Function to display current grid size
-function showCurrentGridSize(size) {
-    return `${size}x${size} GRID`;
+function showCurrentGridSize(n) {
+    return `${n}x${n} GRID`;
 };
 
 // Function to update grid size according to slider
