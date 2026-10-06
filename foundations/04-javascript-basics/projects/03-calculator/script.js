@@ -1,7 +1,8 @@
 const firstNumber = [];
 const secondNumber = [];
+const operator = [];
 const numberKey = document.querySelectorAll(".number-key");
-
+const display = document.querySelector("#display");
 
 // Operators
 function add(x, y) {
@@ -39,10 +40,19 @@ function convertArrayToNumber(arr) {
     }, 0);
 }
 
-numberKey.forEach((button) => {
-    button.addEventListener("click", () => {
-        const value = parseInt(button.textContent);
-        firstNumber.push(value);
-        console.log(firstNumber);
+// Function to update number variables
+function updateNumber(arr) {
+    numberKey.forEach((button) => {
+        button.addEventListener("click", () => {
+            const value = parseInt(button.textContent);
+            arr.push(value);
+            display.textContent = convertArrayToNumber(arr);
+        });
     });
-});
+}
+
+// Function to calculate one line
+function calculate() {
+    
+}
+
