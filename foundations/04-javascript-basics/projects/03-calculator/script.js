@@ -2,7 +2,13 @@ const firstNumber = [];
 const secondNumber = [];
 const operator = [];
 const numberKey = document.querySelectorAll(".number-key");
+const operatorKey = document.querySelectorAll(".operator-key");
 const display = document.querySelector("#display");
+const addBtn = document.querySelector("#add-btn");
+const subtractBtn = document.querySelector("#subtract-btn");
+const divideBtn = document.querySelector("#divide-btn");
+const multiplyBtn = document.querySelector("#multiply-btn");
+const equalsBtn = document.querySelector("#equals-btn");
 
 // Operators
 function add(x, y) {
@@ -40,19 +46,38 @@ function convertArrayToNumber(arr) {
     }, 0);
 }
 
-// Function to update number variables
+// Function to update number vars
 function updateNumber(arr) {
     numberKey.forEach((button) => {
         button.addEventListener("click", () => {
             const value = parseInt(button.textContent);
             arr.push(value);
-            display.textContent = convertArrayToNumber(arr);
+            number = convertArrayToNumber(arr);
+            console.log(number)
+        });
+    });
+}
+
+// Function to update operator var
+function updateOperator(arr) {
+    operatorKey.forEach((button) => {
+        button.addEventListener("click", () => {
+            const value = button.textContent;
+            arr.push(value);
+            console.log(operator);
         });
     });
 }
 
 // Function to calculate one line
 function calculate() {
-    
+    if (operator.length === 0) {
+        updateNumber(firstNumber);
+    }
+    if (operator.length > 0) {
+        updateNumber(secondNumber);
+    }
+    updateOperator(operator);
 }
 
+calculate();
