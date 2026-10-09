@@ -46,8 +46,12 @@ body {
     align-items: center;
 }
 
-#screen-display {
+#screen {
     position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     width: 500px;
     height: 275px;
@@ -58,6 +62,7 @@ body {
     background-color: #B9DECA;
 
     font-family: 'Press Start 2P';
+    font-size: 30px;
 }
 
 .eye-container {
