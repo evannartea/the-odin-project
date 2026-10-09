@@ -1,6 +1,6 @@
-const firstNumber = [];
-const secondNumber = [];
-const operator = [];
+let firstNumber = [];
+let secondNumber = [];
+let operator = "";
 const numberKey = document.querySelectorAll(".number-key");
 const operatorKey = document.querySelectorAll(".operator-key");
 const display = document.querySelector("#display");
@@ -46,38 +46,30 @@ function convertArrayToNumber(arr) {
     }, 0);
 }
 
-// Function to update number vars
-function updateNumber(arr) {
-    numberKey.forEach((button) => {
-        button.addEventListener("click", () => {
-            const value = parseInt(button.textContent);
-            arr.push(value);
-            number = convertArrayToNumber(arr);
-            console.log(number)
-        });
+numberKey.forEach((button) => {
+    button.addEventListener("click", () => {
+        const value = parseInt(button.textContent);
+
+        if (operator.length === 0) {
+            firstNumber.push(value);
+        }
+        else {
+            secondNumber.push(value);
+        }
+        
+        first = convertArrayToNumber(firstNumber);
+        second = convertArrayToNumber(secondNumber);
+
+        console.log(first)
+        console.log(second)
     });
-}
+});
 
-// Function to update operator var
-function updateOperator(arr) {
-    operatorKey.forEach((button) => {
-        button.addEventListener("click", () => {
-            const value = button.textContent;
-            arr.push(value);
-            console.log(operator);
-        });
+
+operatorKey.forEach((button) => {
+    button.addEventListener("click", () => {
+        const value = button.textContent;
+        operator += value;
+        console.log(operator);
     });
-}
-
-// Function to calculate one line
-function calculate() {
-    if (operator.length === 0) {
-        updateNumber(firstNumber);
-    }
-    if (operator.length > 0) {
-        updateNumber(secondNumber);
-    }
-    updateOperator(operator);
-}
-
-calculate();
+});
