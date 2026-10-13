@@ -50,6 +50,7 @@ function operate(operator, num1, num2) {
 //     }, 0);
 // }
 
+// numberKey EventListener
 numberKey.forEach((button) => {
     button.addEventListener("click", () => {
         if (operator.length === 0) {
@@ -63,10 +64,10 @@ numberKey.forEach((button) => {
     });
 });
 
+// operatorKey EventListener
 operatorKey.forEach((button) => {
     button.addEventListener("click", () => {
         operator = button.textContent;
-
         console.log(operator);
     });
 });
