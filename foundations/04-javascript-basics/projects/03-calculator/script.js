@@ -12,19 +12,19 @@ const equalsBtn = document.querySelector("#equals-btn");
 
 // Operators
 function add(x, y) {
-    return x + y;
+    return Number(x) + Number(y);
 }
 
 function subtract(x, y) {
-    return x - y;
+    return Number(x) - Number(y);
 }
 
 function multiply(x, y) {
-    return x * y;
+    return Number(x) * Number(y);
 }
 
 function divide(x, y) {
-    return x / y;
+    return Number(x) / Number(y);
 }
 
 // Function to apply operator to two numbers
@@ -59,13 +59,11 @@ numberKey.forEach((button) => {
     button.addEventListener("click", () => {
         if (operator.length === 0) {
             firstNumber += button.textContent;
-            intFirst = Number(firstNumber);
-            console.log(intFirst);
+            console.log(firstNumber);
         }
         else {
             secondNumber += button.textContent;
-            intSecond = Number(secondNumber);
-            console.log(intSecond);
+            console.log(secondNumber);
         }
     });
 });
