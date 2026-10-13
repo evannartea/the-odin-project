@@ -29,7 +29,16 @@ function divide(x, y) {
 
 // Function to apply operator to two numbers
 function operate(operator, num1, num2) {
-    return operator(num1, num2);   
+    switch(operator) {
+        case "+":
+            return add(num1, num2);
+        case "-":
+            return subtract(num1, num2);
+        case "÷":
+            return divide(num1, num2);
+        case "x":
+            return multiply(num1, num2);
+    }
 }
 
 // // Function to turn array of numbers into whole number
@@ -48,30 +57,28 @@ function operate(operator, num1, num2) {
 
 numberKey.forEach((button) => {
     button.addEventListener("click", () => {
-        const value = parseInt(button.textContent);
-
         if (operator.length === 0) {
-            firstNumber += value;
+            firstNumber += button.textContent;
+            intFirst = Number(firstNumber);
+            console.log(intFirst);
         }
         else {
-            secondNumber += value;
+            secondNumber += button.textContent;
+            intSecond = Number(secondNumber);
+            console.log(intSecond);
         }
-
-        console.log(firstNumber);
-        console.log(secondNumber);
     });
 });
 
-
 operatorKey.forEach((button) => {
     button.addEventListener("click", () => {
-        const value = button.textContent;
-        operator += value;
+        operator = button.textContent;
+
         console.log(operator);
     });
 });
 
 equalsBtn.addEventListener("click", () => {
-    const answer = operate(multiply, firstNumber, secondNumber);
+    const answer = operate(operator, firstNumber, secondNumber);
     console.log(answer);
 });
