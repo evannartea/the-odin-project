@@ -1,5 +1,5 @@
-let firstNumber = [];
-let secondNumber = [];
+let firstNumber = "";
+let secondNumber = "";
 let operator = "";
 const numberKey = document.querySelectorAll(".number-key");
 const operatorKey = document.querySelectorAll(".operator-key");
@@ -32,36 +32,33 @@ function operate(operator, num1, num2) {
     return operator(num1, num2);   
 }
 
-// Function to turn array of numbers into whole number
-/*
-testArr = [1, 2, 3];
+// // Function to turn array of numbers into whole number
+// /*
+// testArr = [1, 2, 3];
 
-(1 * 100) + (2 * 10) + (3 * 1)
+// (1 * 100) + (2 * 10) + (3 * 1)
 
-(arr[0] * 10^2) + (arr[1] * 10^1) + (arr[2] * 10^0) + ... + (arr[i] * 10^(arr.length - i - 1))
-*/
-function convertArrayToNumber(arr) {
-    return arr.reduce((acc, currentValue, index) => {
-        return acc + currentValue * 10**(arr.length - index - 1);
-    }, 0);
-}
+// (arr[0] * 10^2) + (arr[1] * 10^1) + (arr[2] * 10^0) + ... + (arr[i] * 10^(arr.length - i - 1))
+// */
+// function convertArrayToNumber(arr) {
+//     return arr.reduce((acc, currentValue, index) => {
+//         return acc + currentValue * 10**(arr.length - index - 1);
+//     }, 0);
+// }
 
 numberKey.forEach((button) => {
     button.addEventListener("click", () => {
         const value = parseInt(button.textContent);
 
         if (operator.length === 0) {
-            firstNumber.push(value);
+            firstNumber += value;
         }
         else {
-            secondNumber.push(value);
+            secondNumber += value;
         }
-        
-        first = convertArrayToNumber(firstNumber);
-        second = convertArrayToNumber(secondNumber);
 
-        console.log(first)
-        console.log(second)
+        console.log(firstNumber);
+        console.log(secondNumber);
     });
 });
 
@@ -72,4 +69,9 @@ operatorKey.forEach((button) => {
         operator += value;
         console.log(operator);
     });
+});
+
+equalsBtn.addEventListener("click", () => {
+    const answer = operate(multiply, firstNumber, secondNumber);
+    console.log(answer);
 });
