@@ -4,11 +4,6 @@ let operator = "";
 const numberKey = document.querySelectorAll(".number-key");
 const operatorKey = document.querySelectorAll(".operator-key");
 const display = document.querySelector("#display");
-const addBtn = document.querySelector("#add-btn");
-const subtractBtn = document.querySelector("#subtract-btn");
-const divideBtn = document.querySelector("#divide-btn");
-const multiplyBtn = document.querySelector("#multiply-btn");
-const equalsBtn = document.querySelector("#equals-btn");
 
 // Operators
 function add(x, y) {
