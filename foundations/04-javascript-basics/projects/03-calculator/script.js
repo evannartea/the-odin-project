@@ -1,9 +1,11 @@
 let firstNumber = "";
 let secondNumber = "";
 let operator = "";
+const display = document.querySelector("#display");
 const numberKey = document.querySelectorAll(".number-key");
 const operatorKey = document.querySelectorAll(".operator-key");
-const display = document.querySelector("#display");
+const equalsBtn = document.querySelector("#equals-btn");
+
 
 // Operators
 function add(x, y) {
