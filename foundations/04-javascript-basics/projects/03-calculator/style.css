@@ -66,6 +66,7 @@ body {
 }
 
 .eye-container {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -87,7 +88,7 @@ body {
 #smile {
     position: absolute;
     left: 150px;
-    bottom: 75px;
+    bottom: 60px;
 
     width: 200px;
     height: 100px;
