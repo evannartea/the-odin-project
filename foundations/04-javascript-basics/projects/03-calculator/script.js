@@ -6,6 +6,7 @@ const display = document.querySelector("#display");
 const numberKey = document.querySelectorAll(".number-key");
 const operatorKey = document.querySelectorAll(".operator-key");
 const equalsBtn = document.querySelector("#equals-btn");
+const clearBtn = document.querySelector("#clear-btn");
 
 // Operators
 function add(x, y) {
@@ -84,6 +85,15 @@ operatorKey.forEach((button) => {
     });
 });
 
+// clearBtn EventListener
+clearBtn.addEventListener("click", () => {
+    display.textContent = "";
+    firstNumber = "";
+    secondNumber = "";
+    operator = "";
+});
+
+// equalsBtn EventListener
 equalsBtn.addEventListener("click", () => {
     const answer = operate(operator, firstNumber, secondNumber);
 
