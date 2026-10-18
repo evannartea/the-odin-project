@@ -52,7 +52,7 @@ function calculate() {
     let firstNumber = "";
     let secondNumber = "";
     let operator = "";
-    
+
     const screen = document.querySelector("#screen");
     const display = document.querySelector("#display");
     const numberKey = document.querySelectorAll(".number-key");
@@ -67,6 +67,7 @@ function calculate() {
             screen.innerHTML = "";
             screen.appendChild(display);
 
+            // If operator not present
             if (operator.length === 0) {
                 firstNumber += value;
                 display.textContent += value;
@@ -83,6 +84,7 @@ function calculate() {
     // operatorKey EventListener
     operatorKey.forEach((button) => {
         button.addEventListener("click", () => {
+            // Perform operate() if firstNumber and secondNumber are present
             if (firstNumber && secondNumber) {
                 const answer = operate(firstNumber, operator, secondNumber);
                 firstNumber = answer;
