@@ -84,7 +84,8 @@ function caluclate() {
 
                 firstNumber = answer;
                 secondNumber = "";
-                display.textContent = answer;
+
+                console.log(`Current answer: ${answer}`);
             }
 
             operator = value;
@@ -108,7 +109,7 @@ function caluclate() {
 
         display.textContent = answer;
 
-        console.log(`Answer: ${answer}`);
+        console.log(`Final answer: ${answer}`);
     });
 }
 
