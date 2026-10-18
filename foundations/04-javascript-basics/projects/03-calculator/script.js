@@ -48,7 +48,7 @@ function operate(num1, operator, num2) {
 //     }, 0);
 // }
 
-function caluclate() {
+function calculate() {
     let firstNumber = "";
     let secondNumber = "";
     let operator = "";
@@ -120,4 +120,4 @@ function caluclate() {
     });
 }
 
-caluclate();
+calculate();
