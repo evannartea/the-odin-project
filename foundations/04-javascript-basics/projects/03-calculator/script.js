@@ -13,7 +13,7 @@ function multiply(x, y) {
 
 function divide(x, y) {
     if (y === "0") {
-        return "Unacceptable!"
+        return "Unacceptable!";
     }
     else {
         return Number(x) / Number(y);
@@ -84,6 +84,9 @@ function calculate() {
     // operatorKey EventListener
     operatorKey.forEach((button) => {
         button.addEventListener("click", () => {
+            screen.innerHTML = "";
+            screen.appendChild(display);
+
             // Perform operate() if firstNumber and secondNumber are present
             if (firstNumber && secondNumber) {
                 const answer = operate(firstNumber, operator, secondNumber);
