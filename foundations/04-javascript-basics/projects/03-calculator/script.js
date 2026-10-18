@@ -12,7 +12,12 @@ function multiply(x, y) {
 }
 
 function divide(x, y) {
-    return Number(x) / Number(y);
+    if (y === "0") {
+        return "Unacceptable!"
+    }
+    else {
+        return Number(x) / Number(y);
+    }
 }
 
 // Function to apply operator to two numbers
