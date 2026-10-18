@@ -52,6 +52,7 @@ function calculate() {
     let firstNumber = "";
     let secondNumber = "";
     let operator = "";
+    
     const screen = document.querySelector("#screen");
     const display = document.querySelector("#display");
     const numberKey = document.querySelectorAll(".number-key");
@@ -84,10 +85,8 @@ function calculate() {
         button.addEventListener("click", () => {
             if (firstNumber && secondNumber) {
                 const answer = operate(firstNumber, operator, secondNumber);
-
                 firstNumber = answer;
                 secondNumber = "";
-
                 console.log(`Current answer: ${answer}`);
             }
 
@@ -113,9 +112,7 @@ function calculate() {
     // equalsBtn EventListener
     equalsBtn.addEventListener("click", () => {
         const answer = operate(firstNumber, operator, secondNumber);
-
         display.textContent = answer;
-
         console.log(`Final answer: ${answer}`);
     });
 }
