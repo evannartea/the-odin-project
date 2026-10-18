@@ -1,6 +1,7 @@
 let firstNumber = "";
 let secondNumber = "";
 let operator = "";
+let currentInput = [];
 const screen = document.querySelector("#screen");
 const display = document.querySelector("#display");
 const numberKey = document.querySelectorAll(".number-key");
@@ -53,51 +54,57 @@ function operate(operator, num1, num2) {
 //     }, 0);
 // }
 
-// numberKey EventListener
-numberKey.forEach((button) => {
-    button.addEventListener("click", () => {
-        const value = button.textContent;
-        screen.innerHTML = "";
-        screen.appendChild(display);
+function caluclate() {
+    // numberKey EventListener
+    numberKey.forEach((button) => {
+        button.addEventListener("click", () => {
+            const value = button.textContent;
+            screen.innerHTML = "";
+            screen.appendChild(display);
 
-        if (operator.length === 0) {
-            firstNumber += value;
-            display.textContent += value;
-            console.log(firstNumber);
-        }
-        else {
-            secondNumber += value;
-            display.textContent += value;
-            console.log(secondNumber);
-        }
+            if (operator.length === 0) {
+                firstNumber += value;
+                display.textContent += value;
+                console.log(firstNumber);
+                console.log(typeof firstNumber);
+            }
+            else {
+                secondNumber += value;
+                display.textContent += value;
+                console.log(secondNumber);
+                console.log(typeof secondNumber);
+            }
+        });
     });
-});
 
-// operatorKey EventListener
-operatorKey.forEach((button) => {
-    button.addEventListener("click", () => {
-        const value = button.textContent;
+    // operatorKey EventListener
+    operatorKey.forEach((button) => {
+        button.addEventListener("click", () => {
+            const value = button.textContent;
 
-        operator = value;
-        display.textContent += value;
+            operator = value;
+            display.textContent += value;
 
-        console.log(operator);
+            console.log(operator);
+        });
     });
-});
 
-// clearBtn EventListener
-clearBtn.addEventListener("click", () => {
-    display.textContent = "";
-    firstNumber = "";
-    secondNumber = "";
-    operator = "";
-});
+    // clearBtn EventListener
+    clearBtn.addEventListener("click", () => {
+        display.textContent = "";
+        firstNumber = "";
+        secondNumber = "";
+        operator = "";
+    });
 
-// equalsBtn EventListener
-equalsBtn.addEventListener("click", () => {
-    const answer = operate(operator, firstNumber, secondNumber);
+    // equalsBtn EventListener
+    equalsBtn.addEventListener("click", () => {
+        const answer = operate(operator, firstNumber, secondNumber);
 
-    display.textContent = answer;
+        display.textContent = answer;
 
-    console.log(answer);
-});
+        console.log(answer);
+    });
+}
+
+caluclate();
