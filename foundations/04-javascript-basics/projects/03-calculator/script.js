@@ -77,8 +77,6 @@ function caluclate() {
     // operatorKey EventListener
     operatorKey.forEach((button) => {
         button.addEventListener("click", () => {
-            const value = button.textContent;
-
             if (firstNumber && secondNumber) {
                 const answer = operate(firstNumber, operator, secondNumber);
 
@@ -88,9 +86,9 @@ function caluclate() {
                 console.log(`Current answer: ${answer}`);
             }
 
+            const value = button.textContent;
             operator = value;
             display.textContent += value;
-
             console.log(`Current operator: ${operator}`);
         });
     });
@@ -101,6 +99,10 @@ function caluclate() {
         firstNumber = "";
         secondNumber = "";
         operator = "";
+
+        console.log(`First Number: ${firstNumber}`);
+        console.log(`Second Number: ${secondNumber}`);
+        console.log(`Current operator: ${operator}`);
     });
 
     // equalsBtn EventListener
