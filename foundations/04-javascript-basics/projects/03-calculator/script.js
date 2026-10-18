@@ -1,14 +1,3 @@
-let firstNumber = "";
-let secondNumber = "";
-let operator = "";
-let currentInput = [];
-const screen = document.querySelector("#screen");
-const display = document.querySelector("#display");
-const numberKey = document.querySelectorAll(".number-key");
-const operatorKey = document.querySelectorAll(".operator-key");
-const equalsBtn = document.querySelector("#equals-btn");
-const clearBtn = document.querySelector("#clear-btn");
-
 // Operators
 function add(x, y) {
     return Number(x) + Number(y);
@@ -27,7 +16,7 @@ function divide(x, y) {
 }
 
 // Function to apply operator to two numbers
-function operate(operator, num1, num2) {
+function operate(num1, operator, num2) {
     switch(operator) {
         case "+":
             return add(num1, num2);
@@ -55,6 +44,16 @@ function operate(operator, num1, num2) {
 // }
 
 function caluclate() {
+    let firstNumber = "";
+    let secondNumber = "";
+    let operator = "";
+    const screen = document.querySelector("#screen");
+    const display = document.querySelector("#display");
+    const numberKey = document.querySelectorAll(".number-key");
+    const operatorKey = document.querySelectorAll(".operator-key");
+    const clearBtn = document.querySelector("#clear-btn");
+    const equalsBtn = document.querySelector("#equals-btn");
+
     // numberKey EventListener
     numberKey.forEach((button) => {
         button.addEventListener("click", () => {
@@ -65,14 +64,12 @@ function caluclate() {
             if (operator.length === 0) {
                 firstNumber += value;
                 display.textContent += value;
-                console.log(firstNumber);
-                console.log(typeof firstNumber);
+                console.log(`First Number: ${firstNumber}`);
             }
             else {
                 secondNumber += value;
                 display.textContent += value;
-                console.log(secondNumber);
-                console.log(typeof secondNumber);
+                console.log(`Second Number: ${secondNumber}`);
             }
         });
     });
@@ -82,10 +79,18 @@ function caluclate() {
         button.addEventListener("click", () => {
             const value = button.textContent;
 
+            if (firstNumber && secondNumber) {
+                const answer = operate(firstNumber, operator, secondNumber);
+
+                firstNumber = answer;
+                secondNumber = "";
+                display.textContent = answer;
+            }
+
             operator = value;
             display.textContent += value;
 
-            console.log(operator);
+            console.log(`Current operator: ${operator}`);
         });
     });
 
@@ -99,11 +104,11 @@ function caluclate() {
 
     // equalsBtn EventListener
     equalsBtn.addEventListener("click", () => {
-        const answer = operate(operator, firstNumber, secondNumber);
+        const answer = operate(firstNumber, operator, secondNumber);
 
         display.textContent = answer;
 
-        console.log(answer);
+        console.log(`Answer: ${answer}`);
     });
 }
 
