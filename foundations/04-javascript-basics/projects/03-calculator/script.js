@@ -1,37 +1,23 @@
 // Function to apply operator to two numbers
 function operate(firstOperand, operator, secondOperand) {
-    // Operators
-    function add(x, y) {
-        return Number(x) + Number(y);
-    }
-
-    function subtract(x, y) {
-        return Number(x) - Number(y);
-    }
-
-    function multiply(x, y) {
-        return Number(x) * Number(y);
-    }
-
-    function divide(x, y) {
-        if (y === "0") {
-            // FIXME: Clear "Unacceptable!" message once user types again
-            return "Unacceptable!";
-        }
-        else {
-            return Number(x) / Number(y);
-        }
-    }
+    const x = Number(firstOperand);
+    const y = Number(secondOperand);
 
     switch(operator) {
         case "+":
-            return add(firstOperand, secondOperand);
+            return x + y;
         case "-":
-            return subtract(firstOperand, secondOperand);
-        case "÷":
-            return divide(firstOperand, secondOperand);
+            return x - y;
         case "x":
-            return multiply(firstOperand, secondOperand);
+            return x * y;
+        case "÷":
+            if (y === 0) {
+                // FIXME: Clear "Unacceptable!" message once user types again
+                return "Unacceptable!";
+            }
+            else {
+                return x / y;
+            }
     }
 }
 
