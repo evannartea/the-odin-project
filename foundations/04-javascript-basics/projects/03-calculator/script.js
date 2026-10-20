@@ -1,29 +1,28 @@
-// Operators
-function add(x, y) {
-    return Number(x) + Number(y);
-}
-
-function subtract(x, y) {
-    return Number(x) - Number(y);
-}
-
-function multiply(x, y) {
-    return Number(x) * Number(y);
-}
-
-// FIXME: Clear "Unacceptable!" message once user types again
-
-function divide(x, y) {
-    if (y === "0") {
-        return "Unacceptable!";
-    }
-    else {
-        return Number(x) / Number(y);
-    }
-}
-
 // Function to apply operator to two numbers
 function operate(firstOperand, operator, secondOperand) {
+    // Operators
+    function add(x, y) {
+        return Number(x) + Number(y);
+    }
+
+    function subtract(x, y) {
+        return Number(x) - Number(y);
+    }
+
+    function multiply(x, y) {
+        return Number(x) * Number(y);
+    }
+
+    function divide(x, y) {
+        if (y === "0") {
+            // FIXME: Clear "Unacceptable!" message once user types again
+            return "Unacceptable!";
+        }
+        else {
+            return Number(x) / Number(y);
+        }
+    }
+
     switch(operator) {
         case "+":
             return add(firstOperand, secondOperand);
@@ -85,7 +84,6 @@ function calculate() {
 
     // FIXME: Disable '.' button if there's already a decimal separator in display
     
-
     // operatorKey EventListener
     operatorKey.forEach((button) => {
         button.addEventListener("click", () => {
