@@ -23,16 +23,16 @@ function divide(x, y) {
 }
 
 // Function to apply operator to two numbers
-function operate(num1, operator, num2) {
+function operate(firstOperand, operator, secondOperand) {
     switch(operator) {
         case "+":
-            return add(num1, num2);
+            return add(firstOperand, secondOperand);
         case "-":
-            return subtract(num1, num2);
+            return subtract(firstOperand, secondOperand);
         case "÷":
-            return divide(num1, num2);
+            return divide(firstOperand, secondOperand);
         case "x":
-            return multiply(num1, num2);
+            return multiply(firstOperand, secondOperand);
     }
 }
 
