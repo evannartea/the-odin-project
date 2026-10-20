@@ -108,6 +108,9 @@ function calculate() {
         });
     });
 
+    // TODO: Add backspace button
+    // TODO: Add keyboard support
+
     // clearBtn EventListener
     clearBtn.addEventListener("click", () => {
         // Clear display and all vars
