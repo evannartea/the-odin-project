@@ -11,6 +11,8 @@ function multiply(x, y) {
     return Number(x) * Number(y);
 }
 
+// FIXME: Clear "Unacceptable!" message once user types again
+
 function divide(x, y) {
     if (y === "0") {
         return "Unacceptable!";
@@ -81,13 +83,16 @@ function calculate() {
         });
     });
 
+    // FIXME: Disable '.' button if there's already a decimal separator in display
+    // FIXME: Set default firstNumber = 0 so calculation performed if operator key pressed first
+
     // operatorKey EventListener
     operatorKey.forEach((button) => {
         button.addEventListener("click", () => {
             screen.innerHTML = "";
             screen.appendChild(display);
 
-            // Perform operate() if firstNumber and secondNumber are present
+            // Perform operate() if firstNumber and secondNumber are already present
             if (firstNumber && secondNumber) {
                 const answer = operate(firstNumber, operator, secondNumber);
                 firstNumber = answer;
@@ -95,6 +100,7 @@ function calculate() {
                 console.log(`Current answer: ${answer}`);
             }
 
+            // FIXME: Disbale multiple operators to appear on display
             const value = button.textContent;
             operator = value;
             display.textContent += value;
@@ -104,6 +110,7 @@ function calculate() {
 
     // clearBtn EventListener
     clearBtn.addEventListener("click", () => {
+        // Clear display and all vars
         display.textContent = "";
         firstNumber = "";
         secondNumber = "";
