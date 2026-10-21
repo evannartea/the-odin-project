@@ -51,19 +51,19 @@ function calculate() {
     // numberKey EventListener
     numberKey.forEach((button) => {
         button.addEventListener("click", () => {
-            const value = button.textContent;
+            const number = button.textContent;
             screen.innerHTML = "";
             screen.appendChild(display);
 
             // If operator not present
             if (currentOperator === "") {
-                firstNumber += value;
-                display.textContent += value;
+                firstNumber += number;
+                display.textContent += number;
                 console.log({ firstNumber });
             }
             else {
-                secondNumber += value;
-                display.textContent += value;
+                secondNumber += number;
+                display.textContent += number;
                 console.log({ secondNumber });
             }
         });
@@ -93,9 +93,10 @@ function calculate() {
             }
 
             // FIXME: Disbale multiple operators to appear on display
-            const value = button.textContent;
-            currentOperator = value;
-            display.textContent += value;
+            const operator = button.textContent;
+
+            currentOperator = operator;
+            display.textContent += operator;
             console.log({ currentOperator });
         });
     });
