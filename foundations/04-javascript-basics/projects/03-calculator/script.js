@@ -59,12 +59,12 @@ function calculate() {
             if (currentOperator === "") {
                 firstNumber += value;
                 display.textContent += value;
-                console.log(`First Number: ${firstNumber}`);
+                console.log({ firstNumber });
             }
             else {
                 secondNumber += value;
                 display.textContent += value;
-                console.log(`Second Number: ${secondNumber}`);
+                console.log({ secondNumber });
             }
         });
     });
@@ -79,24 +79,24 @@ function calculate() {
             
             // Perform operate() if firstNumber and secondNumber are already present
             if (firstNumber && secondNumber) {
-                const answer = operate(firstNumber, currentOperator, secondNumber);
-                firstNumber = answer;
+                const currentAnswer = operate(firstNumber, currentOperator, secondNumber);
+                firstNumber = currentAnswer;
                 secondNumber = "";
-                console.log(`Current answer: ${answer}`);
+                console.log({ currentAnswer });
             }
 
             // Set default firstNumber = 0 so calculation performed if operator key pressed first
             if (firstNumber === "") {
                 firstNumber = 0;
                 display.textContent += firstNumber;
-                console.log(`First Number: ${firstNumber}`);
+                console.log({ firstNumber });
             }
 
             // FIXME: Disbale multiple operators to appear on display
             const value = button.textContent;
             currentOperator = value;
             display.textContent += value;
-            console.log(`Current operator: ${currentOperator}`);
+            console.log({ currentOperator });
         });
     });
 
@@ -111,16 +111,16 @@ function calculate() {
         secondNumber = "";
         currentOperator = "";
 
-        console.log(`First Number: ${firstNumber}`);
-        console.log(`Second Number: ${secondNumber}`);
-        console.log(`Current operator: ${currentOperator}`);
+        console.log({ firstNumber });
+        console.log({ secondNumber });
+        console.log({ currentOperator });
     });
 
     // equalsBtn EventListener
     equalsBtn.addEventListener("click", () => {
-        const answer = operate(firstNumber, currentOperator, secondNumber);
-        display.textContent = answer;
-        console.log(`Final answer: ${answer}`);
+        const finalAnswer = operate(firstNumber, currentOperator, secondNumber);
+        display.textContent = finalAnswer;
+        console.log({ finalAnswer });
     });
 }
 
