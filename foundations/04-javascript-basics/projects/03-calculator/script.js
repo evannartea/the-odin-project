@@ -55,7 +55,7 @@ function calculate() {
             screen.appendChild(display);
 
             // If operator not present
-            if (operator.length === 0) {
+            if (operator === "") {
                 firstNumber += value;
                 display.textContent += value;
                 console.log(`First Number: ${firstNumber}`);
