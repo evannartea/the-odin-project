@@ -178,7 +178,8 @@ body {
     padding-left: 75px;
 }
 
-.number-key {
+.number-key,
+#decimal-key {
     display: flex;
     justify-content: center;
     align-items: center;
