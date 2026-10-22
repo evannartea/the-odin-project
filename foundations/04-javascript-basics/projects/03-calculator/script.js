@@ -91,12 +91,21 @@ function calculate() {
                 display.textContent += firstNumber;
                 console.log({ firstNumber });
             }
-
-            // FIXME: Disbale multiple operators to appear on display
+            
             const operator = button.textContent;
+            const displayText = display.textContent;
+            const lastChar = displayText.slice(-1);
+            const hasOperator = operators.includes(lastChar);
 
+            // Disbale multiple operators to appear on display
+            if (hasOperator) {
+                display.textContent = displayText.slice(0, -1) + operator;
+            }
+            else {
+                display.textContent += operator;
+            }
+            
             currentOperator = operator;
-            display.textContent += operator;
             console.log({ currentOperator });
         });
     });
