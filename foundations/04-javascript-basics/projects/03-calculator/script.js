@@ -45,6 +45,7 @@ function calculate() {
     const display = document.querySelector("#display");
     const numberKey = document.querySelectorAll(".number-key");
     const operatorKey = document.querySelectorAll(".operator-key");
+    const decimalKey = document.querySelector("#decimal-key");
     const clearBtn = document.querySelector("#clear-btn");
     const equalsBtn = document.querySelector("#equals-btn");
 
@@ -69,7 +70,42 @@ function calculate() {
         });
     });
 
-    // FIXME: Disable '.' button if there's already a decimal separator in display
+    decimalKey.addEventListener("click", (e) => {
+        screen.innerHTML = "";
+        screen.appendChild(display);
+        const decimal = e.target.textContent;
+
+        if (currentOperator === "") {
+            // If firstNumber is empty, default it to 0
+            if (firstNumber === "") {
+                firstNumber = 0;
+                display.textContent += firstNumber;
+                console.log({ firstNumber });
+            }
+
+            // Only add the decimal if it doesn't already exist
+            if (!String(firstNumber).includes(".")) {
+                firstNumber += decimal;
+                display.textContent += decimal;
+                console.log({ firstNumber });
+            }
+        }
+        else {
+            // If secondNumber is empty, default it to 0
+            if (secondNumber === "") {
+                secondNumber = 0;
+                display.textContent += secondNumber;
+                console.log({ secondNumber });
+            }
+
+            // Only add the decimal if it doesn't already exist
+            if (!String(secondNumber).includes(".")) {
+                secondNumber += decimal;
+                display.textContent += decimal;
+                console.log({ secondNumber });
+            }
+        }
+    });
     
     // operatorKey EventListener
     operatorKey.forEach((button) => {
