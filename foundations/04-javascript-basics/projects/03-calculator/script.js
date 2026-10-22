@@ -78,7 +78,7 @@ function calculate() {
         if (currentOperator === "") {
             // If firstNumber is empty, default it to 0
             if (firstNumber === "") {
-                firstNumber = 0;
+                firstNumber = "0";
                 display.textContent += firstNumber;
                 console.log({ firstNumber });
             }
@@ -93,7 +93,7 @@ function calculate() {
         else {
             // If secondNumber is empty, default it to 0
             if (secondNumber === "") {
-                secondNumber = 0;
+                secondNumber = "0";
                 display.textContent += secondNumber;
                 console.log({ secondNumber });
             }
@@ -123,7 +123,7 @@ function calculate() {
 
             // Set default firstNumber = 0 so calculation performed if operator key pressed first
             if (firstNumber === "") {
-                firstNumber = 0;
+                firstNumber = "0";
                 display.textContent += firstNumber;
                 console.log({ firstNumber });
             }
