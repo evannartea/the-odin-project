@@ -1,0 +1,18 @@
+body {
+    font: 1.2em / 1.5 sans-serif;
+}
+
+/* 1. Make any paragraph that directly follows an <h2> element red. */
+h2 + p {
+    color: red;
+}
+
+/* 2. Style list items that are a direct child of the <ul> with a class of .list as follows: 
+    - Remove their bullets. 
+    - Give them a 1px gray bottom border. */
+
+.list > li {
+    border-bottom: 1px solid gray;
+
+    list-style-type: none;
+}
