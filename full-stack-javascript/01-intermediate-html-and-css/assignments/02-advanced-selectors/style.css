@@ -1,0 +1,20 @@
+body {
+    font: 1.2em / 1.5 sans-serif;
+}
+
+/* 1. Make the <h1> headings blue. */
+h1 {
+    color: blue;
+}
+
+/* 2. Give <h2> headings a blue background and white text. */
+h2 {
+    background-color: blue;
+
+    color: white;
+}
+
+/* 3. Cause text wrapped in a <span> to have a font-size of 200%. */
+span {
+    font-size: 200%;
+}
