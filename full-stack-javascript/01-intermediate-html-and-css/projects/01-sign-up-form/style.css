@@ -1,0 +1,11 @@
+/* ------ Norse Font ------ */
+@font-face {
+    font-family: Norse;
+    src: url(assets/fonts/Norse.otf) format("opentype");
+}
+
+@font-face {
+    font-family: Norse;
+    font-weight: bold;
+    src: url(assets/fonts/Norsebold.otf) format("opentype");
+}
