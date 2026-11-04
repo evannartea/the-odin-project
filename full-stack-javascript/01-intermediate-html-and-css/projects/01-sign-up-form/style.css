@@ -9,3 +9,21 @@
     font-weight: bold;
     src: url(assets/fonts/Norsebold.otf) format("opentype");
 }
+
+body {
+    display: flex;
+
+    height: 100vh;
+    width: 100vh;
+
+    margin: 0;
+}
+
+#sidebar {
+    width: 75%;
+
+    background-image: url(assets/images/halie-west-unsplash.jpg);
+    background-size: cover;
+
+    color: white;
+}
