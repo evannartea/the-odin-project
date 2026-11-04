@@ -10,7 +10,7 @@
 
     <body>
         <!-- Logo Section -->
-        <aside>
+        <aside id="sidebar">
             <div>
                 {logo}
             </div>
@@ -21,19 +21,30 @@
         </aside>
 
         <!-- Sign-up Section -->
-        <section>
-            <div>
-                {quote text}
-            </div>
+        <main id="main-container">
 
-            <div>
-                {sign-up form}
-            </div>
+            <!-- Hero Section -->
+            <section id="hero-container">
+                <div>
+                    {quote text}
+                </div>
+            </section>
+            
+            <!-- Form Section -->
+            <section id="form-container">
+                <div>
+                    {sign-up form}
+                </div>
+            </section>
 
-            <div>
-                {create account button}
-            </div>
-        </section>
+            <!-- Create Account Section -->
+            <section id="button-container">
+                <div>
+                    {create account button}
+                </div>
+            </section>
+            
+        </main>
     </body>
 
 </html>
