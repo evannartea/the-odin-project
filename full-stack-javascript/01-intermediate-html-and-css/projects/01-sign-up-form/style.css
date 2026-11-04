@@ -34,3 +34,7 @@ body {
 
     width: 65%;
 }
+
+.section {
+    flex: 1;
+}
