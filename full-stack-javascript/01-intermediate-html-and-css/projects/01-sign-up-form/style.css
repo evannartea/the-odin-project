@@ -22,6 +22,10 @@ body {
 #sidebar {
     width: 35%;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     background-image: url(assets/images/halie-west-unsplash.jpg);
     background-size: cover;
 
