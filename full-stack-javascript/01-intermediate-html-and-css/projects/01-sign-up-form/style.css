@@ -92,7 +92,7 @@ a {
     flex: 1;
     
     box-sizing: border-box;
-    padding: 50px;
+    padding: 40px 50px;
 }
 
 /* ------- Hero Section ------- */
@@ -132,7 +132,7 @@ a {
 
     font-weight: bold;
     color: white;
-    
+
     cursor: pointer;
 }
 
