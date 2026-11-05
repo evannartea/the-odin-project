@@ -92,7 +92,7 @@ a {
     flex: 1;
     
     box-sizing: border-box;
-    padding: 30px;
+    padding: 50px;
 }
 
 /* ------- Hero Section ------- */
@@ -120,3 +120,21 @@ a {
 }
 
 /* ------- CTA Section ------- */
+
+#cta-container button {
+    width: 200px;
+    height: 40px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: var(--primary-green);
+
+    font-weight: bold;
+    color: white;
+}
+
+#cta-container p > span {
+    font-weight: bold;
+    color: var(--primary-green);
+}
