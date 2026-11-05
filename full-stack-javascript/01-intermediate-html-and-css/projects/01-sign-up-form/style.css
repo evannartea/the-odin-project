@@ -123,7 +123,7 @@ a {
 
 #cta-container button {
     width: 200px;
-    height: 40px;
+    height: 45px;
 
     border: none;
     border-radius: 10px;
@@ -132,6 +132,8 @@ a {
 
     font-weight: bold;
     color: white;
+    
+    cursor: pointer;
 }
 
 #cta-container p > span {
