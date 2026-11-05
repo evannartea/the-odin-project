@@ -26,6 +26,10 @@ body {
     --primary-green: #596d48;
 }
 
+a {
+    color: white;
+}
+
 /* ------------ Logo Sidebar ------------ */
 
 #sidebar {
