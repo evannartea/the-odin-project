@@ -90,6 +90,9 @@ a {
 
 .section {
     flex: 1;
+    
+    box-sizing: border-box;
+    padding: 30px;
 }
 
 /* ------- Hero Section ------- */
@@ -100,11 +103,7 @@ a {
     justify-content: flex-end;
 }
 
-#hero-content {
-    padding: 30px;
-}
-
-#hero-content p {
+#hero-container p {
     margin: 0;
     padding: 10px;
 
