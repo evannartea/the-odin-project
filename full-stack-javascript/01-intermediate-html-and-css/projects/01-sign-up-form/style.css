@@ -33,12 +33,27 @@ body {
 
     display: flex;
     flex-direction: column;
-    align-items: center;
 
     background-image: url(assets/images/halie-west-unsplash.jpg);
     background-size: cover;
 
     color: white;
+}
+
+#logo-container,
+#credits-container {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
+
+#logo-container {
+    align-items: center;
+
+    font-family: Norse;
+    font-size: 100px;
+    font-weight: bold;
 }
 
 /* ------------ Main ------------ */
