@@ -21,6 +21,10 @@ body {
     margin: 0;
 }
 
+:root {
+    --primary-grey: #f9fafb;
+}
+
 /* ------------ Logo Sidebar ------------ */
 
 #sidebar {
@@ -43,6 +47,8 @@ body {
     flex-direction: column;
 
     width: 65%;
+
+    background-color: var(--primary-grey);
 }
 
 .section {
@@ -52,5 +58,11 @@ body {
 /* ------- Hero Section ------- */
 
 /* ------- Form Section ------- */
+
+#form-container {
+    box-shadow: 0 7px 10px 1px #dddedf;
+
+    background-color: white;
+}
 
 /* ------- CTA Section ------- */
