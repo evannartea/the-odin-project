@@ -21,13 +21,13 @@ body {
     margin: 0;
 }
 
+a {
+    color: white;
+}
+
 :root {
     --primary-grey: #f9fafb;
     --primary-green: #596d48;
-}
-
-a {
-    color: white;
 }
 
 /* ------------ Logo Sidebar ------------ */
