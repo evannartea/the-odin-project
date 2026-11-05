@@ -56,6 +56,11 @@ a {
 #logo-container {
     align-items: center;
 
+    margin-top: 150px;
+    padding: 10px 0;
+
+    background-color: rgba(0, 0, 0, 40%);
+
     font-family: Norse;
     font-size: 100px;
     font-weight: bold;
