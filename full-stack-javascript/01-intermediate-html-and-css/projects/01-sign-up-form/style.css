@@ -92,7 +92,7 @@ a {
 
 /* ------- Hero Section ------- */
 
-#main-container > section:nth-of-type(1) {
+#hero-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -113,7 +113,7 @@ a {
 
 /* ------- Form Section ------- */
 
-#main-container > section:nth-of-type(2) {
+#form-container {
     box-shadow: 0 7px 10px 1px #dddedf;
 
     background-color: white;
