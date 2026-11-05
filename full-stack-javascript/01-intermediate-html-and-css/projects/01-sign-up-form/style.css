@@ -56,13 +56,13 @@ a {
 #logo-container {
     align-items: center;
 
-    margin-top: 150px;
+    margin-top: 200px;
     padding: 10px 0;
 
     background-color: rgba(0, 0, 0, 40%);
 
     font-family: Norse;
-    font-size: 100px;
+    font-size: 75px;
     font-weight: bold;
 }
 
@@ -92,15 +92,12 @@ a {
 
 /* ------- Hero Section ------- */
 
-#hero-container {
+#hero-content {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-}
 
-#hero-content {
     height: 100%;
-    padding: 45px;
 }
 
 #hero-content p {
