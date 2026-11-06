@@ -150,7 +150,15 @@ input:focus {
     border: 1px solid lightblue;
     outline: none;
 
-    box-shadow: 2px 2px 2px #dddedf;;
+    box-shadow: 2px 2px 2px #dddedf;
+}
+
+input:user-valid {
+    border: 1px solid lightgreen;
+}
+
+input:user-invalid {
+    border: 1px solid lightcoral;
 }
 
 /* ------- CTA Section ------- */
