@@ -141,6 +141,17 @@ form div {
     gap: 5px;
 }
 
+input {
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+input:focus {
+    border: 1px solid lightblue;
+    outline: none;
+
+    box-shadow: 2px 2px 2px #dddedf;;
+}
 
 /* ------- CTA Section ------- */
 
