@@ -179,7 +179,12 @@ input:user-invalid {
     cursor: pointer;
 }
 
-#cta-container p > span {
+#cta-container p > a {
     font-weight: bold;
+    text-decoration: none;
     color: var(--primary-green);
+}
+
+#cta-container p > a:hover {
+    text-decoration: underline;
 }
