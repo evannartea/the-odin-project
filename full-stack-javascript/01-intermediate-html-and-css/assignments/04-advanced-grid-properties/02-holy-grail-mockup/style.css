@@ -92,6 +92,7 @@
 }
 
 .article .card {
+    height: 200px;
     background-color: #FFFFFF;
     color: black;
     text-align: center;
