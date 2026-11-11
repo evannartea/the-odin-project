@@ -24,6 +24,10 @@
 }
 
 .header {
+    display: grid;
+    grid-template: 1fr / 1fr 4fr;
+    grid-area: header;
+
     background-color: #393f4d;
 }
 
