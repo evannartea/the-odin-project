@@ -42,7 +42,10 @@
 }
 
 .sidebar {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr;
     grid-area: sidebar;
+    gap: 50px;
     background-color: #C50208;
 }
 
