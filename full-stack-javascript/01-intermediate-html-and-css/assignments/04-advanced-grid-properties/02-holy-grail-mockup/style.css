@@ -50,6 +50,7 @@
 }
 
 .sidebar .photo {
+    align-content: center;
     background-color: white;
     color: black;
     font-size: 12px;
@@ -59,6 +60,7 @@
 
 
 .sidebar .side-content {
+    align-content: center;
     background-color: white;
     color: black;
     font-size: 16px;
