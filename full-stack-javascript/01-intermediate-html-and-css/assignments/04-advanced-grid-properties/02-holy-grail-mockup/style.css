@@ -11,7 +11,8 @@
         "sidebar nav"
         "sidebar article"
         "footer footer";
-
+    gap: 4px;
+    
     text-align: center;
 }
 
