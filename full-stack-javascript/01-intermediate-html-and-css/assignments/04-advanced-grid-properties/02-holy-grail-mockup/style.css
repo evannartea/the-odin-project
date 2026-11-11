@@ -4,6 +4,14 @@
 }
 
 .container {
+    display: grid;
+    grid-template: 1fr 1fr 5fr 1fr / 1fr 4fr;
+    grid-template-areas: 
+        "header header"
+        "sidebar nav"
+        "sidebar article"
+        "footer footer";
+
     text-align: center;
 }
 
@@ -26,6 +34,7 @@
 }
 
 .sidebar {
+    grid-area: sidebar;
     background-color: #C50208;
 }
 
@@ -46,6 +55,7 @@
 }
 
 .nav {
+    grid-area: nav;
     background-color: #C50208;
 }
 
@@ -54,6 +64,7 @@
 }
 
 .article {
+    grid-area: article;
     background-color: #bccbde;
 }
 
@@ -82,6 +93,7 @@
 }
 
 .footer {
+    grid-area: footer;
     background-color: #393f4d;
 }
 
