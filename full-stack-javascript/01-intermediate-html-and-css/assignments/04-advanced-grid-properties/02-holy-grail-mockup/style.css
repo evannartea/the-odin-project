@@ -34,11 +34,18 @@
 
 .nav ul,
 .menu ul {
-    display: grid;
-    grid-template: 1fr / 1fr 1fr 1fr 1fr;
-
     font-size: 16px;
     list-style-type: none;
+}
+
+.nav ul {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+}
+
+.menu ul {
+    display: grid;
+        grid-template: 1fr / 1fr 1fr 1fr 1fr;
 }
 
 .sidebar {
@@ -69,6 +76,7 @@
 
 .nav {
     grid-area: nav;
+    align-content: center;
     background-color: #C50208;
 }
 
