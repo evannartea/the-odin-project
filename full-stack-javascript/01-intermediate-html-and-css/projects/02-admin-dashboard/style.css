@@ -7,6 +7,36 @@ html {
 }
 
 :root {
-    --primar-blue: #0099cc;
+    --primary-blue: #0099cc;
     --primary-yellow: #feb925;
+    --primary-grey: #e2e8f0;
+    --primary-white: white;
+}
+
+.layout-container {
+    display: grid;
+    grid-template: 1fr 5fr / 1fr 5fr;
+    grid-template-areas: 
+        "aside header"
+        "aside main";
+
+    height: 100%;   
+}
+
+header {
+    grid-area: header;
+
+    background-color: var(--primary-white);
+}
+
+aside {
+    grid-area: aside;
+
+    background-color: var(--primary-blue);
+}
+
+main {
+    grid-area: main;
+
+    background-color: var(--primary-grey);
 }
