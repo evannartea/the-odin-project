@@ -30,17 +30,23 @@ html {
     height: 100%;   
 }
 
+/* ---------- Header ---------- */
+
 header {
     grid-area: header;
 
     background-color: var(--primary-white);
 }
 
+/* ---------- Sidebar ---------- */
+
 aside {
     grid-area: aside;
 
     background-color: var(--primary-blue);
 }
+
+/* ---------- Main ---------- */
 
 main {
     grid-area: main;
