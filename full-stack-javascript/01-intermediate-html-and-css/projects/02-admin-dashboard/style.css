@@ -64,6 +64,19 @@ img {
     filter: brightness(0) invert(1);
 }
 
+li {
+    list-style-type: none;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
 
 /* ---------- Main ---------- */
 
