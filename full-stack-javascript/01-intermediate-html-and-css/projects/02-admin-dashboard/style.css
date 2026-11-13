@@ -46,6 +46,21 @@ aside {
     background-color: var(--primary-blue);
 }
 
+nav {
+    padding: 1em;
+
+    color: white;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+    margin: none;
+}
+
+
 /* ---------- Main ---------- */
 
 main {
