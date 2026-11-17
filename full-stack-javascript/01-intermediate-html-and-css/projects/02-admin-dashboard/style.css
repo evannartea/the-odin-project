@@ -34,10 +34,10 @@ html {
 
 header {
     display: grid;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     grid-area: header;
 
-    padding: 0 2em;
+    padding: 0 4em;
 
     background-color: var(--primary-white);
 }
@@ -64,6 +64,12 @@ header input {
 
 input:focus {
     outline: none;
+}
+
+.top-group {
+    display: flex;
+    align-items: center;
+    gap: 1em;
 }
 
 /* ---------- Sidebar ---------- */
