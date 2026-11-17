@@ -60,7 +60,7 @@ nav {
     margin: none;
 }
 
-img {
+nav img {
     filter: brightness(0) invert(1);
 }
 
