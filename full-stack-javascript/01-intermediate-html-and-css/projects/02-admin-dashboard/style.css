@@ -33,6 +33,9 @@ html {
 /* ---------- Header ---------- */
 
 header {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+
     grid-area: header;
 
     background-color: var(--primary-white);
