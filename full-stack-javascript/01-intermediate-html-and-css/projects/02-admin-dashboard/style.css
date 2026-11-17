@@ -52,6 +52,20 @@ header section:nth-child(1) {
     align-items: center;
 }
 
+header input {
+    height: 25px;
+    width: 500px;
+
+    border: 1px solid var(--primary-grey);
+    border-radius: 1em;
+
+    background-color: var(--primary-grey);
+}
+
+input:focus {
+    outline: none;
+}
+
 /* ---------- Sidebar ---------- */
 
 aside {
