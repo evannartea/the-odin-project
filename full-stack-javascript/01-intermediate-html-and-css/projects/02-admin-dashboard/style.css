@@ -42,6 +42,10 @@ header {
     background-color: var(--primary-white);
 }
 
+header span {
+    font-weight: bold;
+}
+
 /* ---------- Sidebar ---------- */
 
 aside {
