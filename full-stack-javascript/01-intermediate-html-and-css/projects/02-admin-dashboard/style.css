@@ -76,7 +76,8 @@ a:hover {
     text-decoration: underline;
 }
 
-#nav-header {
+#nav-header,
+.nav-list li {
     display: flex;
     align-items: center;
     gap: 1em;
