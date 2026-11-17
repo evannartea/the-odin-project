@@ -89,12 +89,12 @@ input:focus {
 }
 
 .profile-pic {
-    border-radius: 1em;
+    border-radius: 2em;
 }
 
 .bottom-group img {
-    width: 2em;
-    height: 2em;
+    width: 4em;
+    height: 4em;
 }
 
 /* ---------- Sidebar ---------- */
