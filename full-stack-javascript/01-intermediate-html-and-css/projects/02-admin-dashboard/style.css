@@ -53,26 +53,17 @@ nav {
 
     color: white;
 }
-
-.nav-item {
-    display: flex;
-    align-items: center;
-    gap: 1em;
-
-    margin: none;
-}
-
 nav img {
     filter: brightness(0) invert(1);
-}
-
-li {
-    list-style-type: none;
 }
 
 ul {
     margin: 0;
     padding: 0;
+}
+
+li {
+    list-style-type: none;
 }
 
 a,
@@ -83,6 +74,14 @@ a:visited {
 
 a:hover {
     text-decoration: underline;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+    margin: none;
 }
 
 /* ---------- Main ---------- */
