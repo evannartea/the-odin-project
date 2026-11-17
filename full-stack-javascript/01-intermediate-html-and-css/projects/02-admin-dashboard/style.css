@@ -74,6 +74,10 @@ input:focus {
     gap: 1em;
 }
 
+.profile-pic {
+    border-radius: 1em;
+}
+
 /* ---------- Sidebar ---------- */
 
 aside {
