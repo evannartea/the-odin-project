@@ -49,7 +49,7 @@ aside {
 nav {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 3em;
 
     height: 100%;
 
