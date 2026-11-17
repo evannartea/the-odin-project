@@ -60,6 +60,8 @@ header input {
     border-radius: 1em;
 
     background-color: var(--primary-grey);
+
+    padding-left: 1em;
 }
 
 input:focus {
