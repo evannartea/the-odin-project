@@ -35,8 +35,9 @@ html {
 header {
     display: grid;
     grid-template-rows: 1fr 2fr;
-
     grid-area: header;
+
+    padding: 0 2em;
 
     background-color: var(--primary-white);
 }
