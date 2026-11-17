@@ -30,6 +30,15 @@ html {
     height: 100%;   
 }
 
+button {
+    border: none;
+    padding: 0;
+
+    background: none;
+    
+    cursor: pointer;
+}
+
 /* ---------- Header ---------- */
 
 header {
