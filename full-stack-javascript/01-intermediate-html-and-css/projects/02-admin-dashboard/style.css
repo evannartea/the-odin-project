@@ -47,6 +47,10 @@ aside {
 }
 
 nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
     height: 100%;
 
     padding: 1em;
@@ -85,6 +89,12 @@ a:hover {
     margin: none;
 
     font-weight: bold;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 #nav-header {
