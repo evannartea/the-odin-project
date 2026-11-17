@@ -131,6 +131,11 @@ li {
     list-style-type: none;
 }
 
+li img {
+    width: 25px;
+    height: 25px;
+}
+
 a,
 a:visited {
     text-decoration: none;
