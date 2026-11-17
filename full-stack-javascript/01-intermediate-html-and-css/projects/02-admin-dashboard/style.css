@@ -62,8 +62,8 @@ header section:nth-child(1) {
 }
 
 header input {
-    height: 25px;
     width: 500px;
+    height: 25px;
 
     border: 1px solid var(--primary-grey);
     border-radius: 1em;
@@ -84,12 +84,17 @@ input:focus {
 }
 
 .top-group img {
-    height: 2em;
     width: 2em;
+    height: 2em;
 }
 
 .profile-pic {
     border-radius: 1em;
+}
+
+.bottom-group img {
+    width: 2em;
+    height: 2em;
 }
 
 /* ---------- Sidebar ---------- */
