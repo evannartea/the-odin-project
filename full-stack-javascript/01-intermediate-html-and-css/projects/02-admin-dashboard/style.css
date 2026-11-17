@@ -157,6 +157,11 @@ a:hover {
     font-size: 1.5em;
 }
 
+#nav-header img {
+    width: 50px;
+    height: 50px;
+}
+
 .nav-list {
     display: flex;
     flex-direction: column;
