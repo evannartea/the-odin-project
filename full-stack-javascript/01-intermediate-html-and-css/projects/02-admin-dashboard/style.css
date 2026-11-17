@@ -87,6 +87,11 @@ input:focus {
     border-radius: 1em;
 }
 
+.top-group img {
+    width: 2em;
+    height: 2em;
+}
+
 /* ---------- Sidebar ---------- */
 
 aside {
