@@ -83,13 +83,13 @@ input:focus {
     gap: 1em;
 }
 
-.profile-pic {
-    border-radius: 1em;
+.top-group img {
+    height: 2em;
+    width: 2em;
 }
 
-.top-group img {
-    width: 2em;
-    height: 2em;
+.profile-pic {
+    border-radius: 1em;
 }
 
 /* ---------- Sidebar ---------- */
