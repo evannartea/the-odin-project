@@ -127,7 +127,7 @@ input:focus {
     font-size: 0.75em;
 }
 
-.header-bottom-section>div span:nth-child(2) {
+.header-bottom-section > div span:nth-child(2) {
     font-size: 1.25em;
 }
 
