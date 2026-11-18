@@ -209,7 +209,24 @@ a:hover {
 /* ---------- Main ---------- */
 
 main {
+    display: grid;
+    grid-template: 1fr 1fr / 3fr 1fr;
+    grid-template-areas:
+        "projects announcements"
+        "projects trending";
     grid-area: main;
 
     background-color: var(--primary-grey);
+}
+
+.main-projects {
+    grid-area: projects;
+}
+
+.main-announcements {
+    grid-area: announcements;
+}
+
+.main-trending {
+    grid-area: trending;
 }
