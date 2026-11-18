@@ -1,6 +1,10 @@
-/* ---------- Roboto Font ---------- */
+/* ---------- Thunderman Font ---------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'Thunderman';
+    src: url('https://static.wfonts.com/data/2016/07/02/thunderman/Thunderman.ttf');
+    font-display: swap;
+}
 
 /* ---------- Global ---------- */
 
@@ -10,7 +14,7 @@ html {
 
     margin: 0;
 
-    font-family: 'Roboto';
+    font-family: 'Thunderman';
 }
 
 :root {
@@ -107,6 +111,11 @@ input:focus {
     color: var(--primary-white);
 
     cursor: pointer;
+}
+
+.header-bottom-section >  div {
+    display: flex;
+    flex-direction: column;
 }
 
 .profile-pic {
