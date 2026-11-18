@@ -138,9 +138,15 @@ nav img {
     filter: brightness(0) invert(1);
 }
 
-ul {
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
     margin: 0;
     padding: 0;
+
+    font-size: 1em;
 }
 
 li {
@@ -162,28 +168,20 @@ a:hover {
     text-decoration: underline;
 }
 
-#nav-header,
-.nav-list li {
+nav > div,
+nav ul li {
     display: flex;
     align-items: center;
     gap: 1em;
 }
 
-#nav-header {
+nav > div {
     font-size: 1.5em;
 }
 
-#nav-header img {
+nav > div img {
     width: 50px;
     height: 50px;
-}
-
-.nav-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-
-    font-size: 1em;
 }
 
 /* ---------- Main ---------- */
