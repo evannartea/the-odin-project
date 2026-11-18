@@ -74,12 +74,12 @@ input:focus {
     outline: none;
 }
 
-header section:nth-child(1) img {
+.header-top-section img {
     width: 2em;
     height: 2em;
 }
 
-header section:nth-child(1) button {
+.header-top-section button {
     border: none;
     padding: 0;
 
@@ -88,12 +88,12 @@ header section:nth-child(1) button {
     cursor: pointer;
 }
 
-header section:nth-child(2) img {
+.header-bottom-section img {
     width: 4em;
     height: 4em;
 }
 
-header section:nth-child(2) button {
+.header-bottom-section button {
     width: 100px;
     height: 40px;
 
