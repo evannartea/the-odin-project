@@ -30,15 +30,6 @@ html {
     height: 100%;   
 }
 
-button {
-    border: none;
-    padding: 0;
-
-    background: none;
-    
-    cursor: pointer;
-}
-
 /* ---------- Header ---------- */
 
 header {
@@ -77,6 +68,10 @@ input:focus {
     outline: none;
 }
 
+.profile-pic {
+    border-radius: 2em;
+}
+
 .header-top-section {
     display: flex;
     align-items: center;
@@ -88,8 +83,13 @@ input:focus {
     height: 2em;
 }
 
-.profile-pic {
-    border-radius: 2em;
+.header-top-section button {
+    border: none;
+    padding: 0;
+
+    background: none;
+
+    cursor: pointer;
 }
 
 .header-bottom-section img {
