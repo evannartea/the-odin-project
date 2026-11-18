@@ -46,10 +46,16 @@ header span {
     font-weight: bold;
 }
 
-header section:nth-child(1) {
+header section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header section > div {
+    display: flex;
+    align-items: center;
+    gap: 1em;
 }
 
 header input {
@@ -68,22 +74,12 @@ input:focus {
     outline: none;
 }
 
-.profile-pic {
-    border-radius: 2em;
-}
-
-.header-top-section {
-    display: flex;
-    align-items: center;
-    gap: 1em;
-}
-
-.header-top-section img {
+header section:nth-child(1) img {
     width: 2em;
     height: 2em;
 }
 
-.header-top-section button {
+header section:nth-child(1) button {
     border: none;
     padding: 0;
 
@@ -92,12 +88,12 @@ input:focus {
     cursor: pointer;
 }
 
-.header-bottom-section img {
+header section:nth-child(2) img {
     width: 4em;
     height: 4em;
 }
 
-.header-bottom-section button {
+header section:nth-child(2) button {
     width: 100px;
     height: 40px;
 
@@ -111,6 +107,10 @@ input:focus {
     color: var(--primary-white);
 
     cursor: pointer;
+}
+
+.profile-pic {
+    border-radius: 2em;
 }
 
 /* ---------- Sidebar ---------- */
