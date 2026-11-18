@@ -138,17 +138,6 @@ nav img {
     filter: brightness(0) invert(1);
 }
 
-nav ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-
-    margin: 0;
-    padding: 0;
-
-    font-size: 1em;
-}
-
 li {
     list-style-type: none;
 }
@@ -168,20 +157,31 @@ a:hover {
     text-decoration: underline;
 }
 
-nav > div,
-nav ul li {
+#nav-header,
+.nav-list li {
     display: flex;
     align-items: center;
     gap: 1em;
 }
 
-nav > div {
+#nav-header {
     font-size: 1.5em;
 }
 
-nav > div img {
+#nav-header img {
     width: 50px;
     height: 50px;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    margin: 0;
+    padding: 0;
+
+    font-size: 1em;
 }
 
 /* ---------- Main ---------- */
