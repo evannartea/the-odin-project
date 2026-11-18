@@ -97,6 +97,22 @@ input:focus {
     height: 4em;
 }
 
+.header-bottom-section button {
+    width: 100px;
+    height: 40px;
+
+    border: none;
+    border-radius: 2em;
+    padding: 0;
+
+    background-color: var(--primary-blue);
+
+    font-weight: bold;
+    color: var(--primary-white);
+
+    cursor: pointer;
+}
+
 /* ---------- Sidebar ---------- */
 
 aside {
