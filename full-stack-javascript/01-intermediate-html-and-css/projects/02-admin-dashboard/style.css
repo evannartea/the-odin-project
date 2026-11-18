@@ -77,13 +77,13 @@ input:focus {
     outline: none;
 }
 
-.top-group {
+.header-top-section {
     display: flex;
     align-items: center;
     gap: 1em;
 }
 
-.top-group img {
+.header-top-section img {
     width: 2em;
     height: 2em;
 }
@@ -92,7 +92,7 @@ input:focus {
     border-radius: 2em;
 }
 
-.bottom-group img {
+.header-bottom-section img {
     width: 4em;
     height: 4em;
 }
