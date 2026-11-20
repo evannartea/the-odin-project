@@ -240,3 +240,8 @@ main {
 .main-trending {
     grid-area: trending;
 }
+
+.main-section-header {
+    font-size: 1.25em;
+    font-weight: bold;
+}
