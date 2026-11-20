@@ -219,6 +219,16 @@ main {
     background-color: var(--primary-grey);
 }
 
+.main-projects,
+.main-announcements,
+.main-trending {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    padding: 2em;
+}
+
 .main-projects {
     grid-area: projects;
 }
