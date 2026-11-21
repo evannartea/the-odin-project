@@ -253,7 +253,7 @@ main section > h3 {
     box-sizing: border-box;
     border-left: 0.5em solid var(--primary-yellow);
     border-radius: 0.5em;
-    padding: 1em;
+    padding: 1.5em;
 
     background-color: var(--primary-white);
 }
