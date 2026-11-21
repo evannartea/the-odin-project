@@ -252,6 +252,7 @@ main section > h3 {
 .projects-card {
     display: flex;
     flex-direction: column;
+    gap: 0.5em;
 
     width: 400px;
     height: 200px;
@@ -272,6 +273,7 @@ main section > h3 {
 .projects-card-body {
     flex: 1 1 auto;
 
+    font-size: 0.8em;
     color: darkgray;
 }
 
