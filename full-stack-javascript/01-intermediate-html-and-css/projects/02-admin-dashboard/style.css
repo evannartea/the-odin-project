@@ -267,6 +267,14 @@ main section > h3 {
 .projects-card-footer {
     display: flex;
     justify-content: flex-end;
+    gap: 1em;
+}
+
+.projects-card-footer img {
+    width: 25px;
+    height: 25px;
+
+    filter: brightness(0) saturate(100%) invert(34%) sepia(4%) saturate(227%) hue-rotate(177deg) brightness(95%) contrast(88%);
 }
 
 .main-announcements {
