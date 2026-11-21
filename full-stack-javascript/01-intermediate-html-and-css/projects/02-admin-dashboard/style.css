@@ -237,6 +237,14 @@ main section > h3 {
     grid-area: projects;
 }
 
+.projects-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+
+
 .main-announcements {
     grid-area: announcements;
 }
