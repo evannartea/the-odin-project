@@ -244,6 +244,9 @@ main section > h3 {
 }
 
 .projects-card {
+    display: flex;
+    flex-direction: column;
+
     width: 400px;
     height: 200px;
 
@@ -253,6 +256,15 @@ main section > h3 {
     padding: 1em;
 
     background-color: var(--primary-white);
+}
+
+.projects-card-body {
+    flex: 1 1 auto;
+}
+
+.projects-card-footer {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .main-announcements {
