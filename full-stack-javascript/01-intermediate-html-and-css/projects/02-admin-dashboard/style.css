@@ -1,10 +1,6 @@
 /* ---------- Thunderman Font ---------- */
 
-@font-face {
-    font-family: 'Thunderman';
-    src: url('https://static.wfonts.com/data/2016/07/02/thunderman/Thunderman.ttf');
-    font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* ---------- Global ---------- */
 
@@ -14,7 +10,7 @@ html {
 
     margin: 0;
 
-    font-family: 'Thunderman';
+    font-family: 'Roboto';
 }
 
 :root {
@@ -35,7 +31,7 @@ html {
 }
 
 button {
-    font-family: 'Thunderman';
+    font-family: 'Roboto';
 }
 
 /* ---------- Header ---------- */
