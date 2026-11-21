@@ -264,8 +264,8 @@ main section > h3 {
     background-color: var(--primary-white);
 }
 
-.projects-card > h4,
-.projects-card > p {
+.projects-card-header,
+.projects-card-body {
     margin: 0;
 }
 
