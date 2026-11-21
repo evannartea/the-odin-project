@@ -233,6 +233,8 @@ main section > h3 {
     padding: 2em;
 }
 
+/* ----- Your Projects Section ----- */
+
 .main-projects {
     grid-area: projects;
 }
@@ -286,9 +288,13 @@ main section > h3 {
     cursor: pointer;
 }
 
+/* ----- Announcements Section ----- */
+
 .main-announcements {
     grid-area: announcements;
 }
+
+/* ----- Trending Section ----- */
 
 .main-trending {
     grid-area: trending;
