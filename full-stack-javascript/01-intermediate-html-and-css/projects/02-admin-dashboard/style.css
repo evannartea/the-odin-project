@@ -96,6 +96,10 @@ input:focus {
     cursor: pointer;
 }
 
+.header-top-section:nth-child(2) {
+    gap: 1.5em;
+}
+
 .header-bottom-section img {
     width: 4em;
     height: 4em;
