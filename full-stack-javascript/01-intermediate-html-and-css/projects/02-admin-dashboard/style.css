@@ -277,6 +277,15 @@ main section > h3 {
     filter: brightness(0) saturate(100%) invert(34%) sepia(4%) saturate(227%) hue-rotate(177deg) brightness(95%) contrast(88%);
 }
 
+.projects-card-footer button {
+    border: none;
+    padding: 0;
+    
+    background: none;
+    
+    cursor: pointer;
+}
+
 .main-announcements {
     grid-area: announcements;
 }
