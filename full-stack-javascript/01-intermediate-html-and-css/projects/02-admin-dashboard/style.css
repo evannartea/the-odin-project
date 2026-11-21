@@ -243,7 +243,14 @@ main section > h3 {
     gap: 1em;
 }
 
+.projects-card {
+    width: 200px;
+    height: 200px;
 
+    border-radius: 1em;
+
+    background-color: var(--primary-white);
+}
 
 .main-announcements {
     grid-area: announcements;
