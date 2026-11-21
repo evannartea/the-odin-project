@@ -247,6 +247,7 @@ main section > h3 {
     width: 400px;
     height: 200px;
 
+    border-left: 0.5em solid var(--primary-yellow);
     border-radius: 0.5em;
 
     background-color: var(--primary-white);
