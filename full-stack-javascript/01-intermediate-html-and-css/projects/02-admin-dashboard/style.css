@@ -343,7 +343,11 @@ main section > h3 {
     height: 2.5em;
 }
 
+.trending-username {
+    font-size: 0.8em;
+}
+
 .trending-project {
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: darkgray;
 }
