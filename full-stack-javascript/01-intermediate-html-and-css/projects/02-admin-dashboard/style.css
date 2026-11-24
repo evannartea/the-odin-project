@@ -298,12 +298,7 @@ main {
     grid-area: announcements;
 }
 
-/* ----- Trending Section ----- */
-
-.main-trending {
-    grid-area: trending;
-}
-
+.announcement-card-container,
 .trending-card-container {
     display: flex;
     flex-direction: column;
@@ -315,6 +310,12 @@ main {
     border-radius: 0.5em;
 
     background-color: var(--primary-white);
+}
+
+/* ----- Trending Section ----- */
+
+.main-trending {
+    grid-area: trending;
 }
 
 .trending-card {
