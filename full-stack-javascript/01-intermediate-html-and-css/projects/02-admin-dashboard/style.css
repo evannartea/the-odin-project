@@ -218,7 +218,7 @@ main {
     display: grid;
     grid-template: 1fr 1fr / 3fr 1fr;
     grid-template-areas:
-        "projects announcements"
+        "projects news"
         "projects trending";
     grid-area: main;
 
@@ -228,7 +228,7 @@ main {
 }
 
 .main-projects,
-.main-announcements,
+.main-news,
 .main-trending {
     display: flex;
     flex-direction: column;
@@ -292,13 +292,13 @@ main {
     cursor: pointer;
 }
 
-/* ----- Announcements Section ----- */
+/* ----- News Section ----- */
 
-.main-announcements {
-    grid-area: announcements;
+.main-news {
+    grid-area: news;
 }
 
-.announcement-card-container,
+.news-card-container,
 .trending-card-container {
     display: flex;
     flex-direction: column;
@@ -312,7 +312,7 @@ main {
     background-color: var(--primary-white);
 }
 
-.announcement-card {
+.news-card {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -324,11 +324,11 @@ main {
     padding: 0 1.5em;    
 }
 
-.announcement-header {
+.news-header {
     font-size: 0.9em;
 }
 
-.announcement-body,
+.news-body,
 .trending-project {
     font-size: 0.8em;
     color: darkgray;
