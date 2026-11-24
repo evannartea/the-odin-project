@@ -34,6 +34,12 @@ button {
     font-family: 'Roboto';
 }
 
+h3,
+h4,
+p {
+    margin: 0;
+}
+
 /* ---------- Header ---------- */
 
 header {
@@ -219,12 +225,6 @@ main {
     padding: 2em;
 
     background-color: var(--primary-grey);
-}
-
-h3,
-h4,
-p {
-    margin: 0;
 }
 
 .main-projects,
