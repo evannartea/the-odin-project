@@ -312,6 +312,25 @@ main {
     background-color: var(--primary-white);
 }
 
+.announcement-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    box-sizing: border-box;
+    padding: 0 1.5em;    
+}
+
+.announcement-header {
+
+}
+
+.announcement-body {
+
+}
+
 /* ----- Trending Section ----- */
 
 .main-trending {
