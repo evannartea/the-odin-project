@@ -40,9 +40,19 @@ p {
     margin: 0;
 }
 
+header,
+.projects-card,
+.news-card-container,
+.trending-card-container {
+    box-shadow: 3px 3px 3px darkgray;
+}
+
 /* ---------- Header ---------- */
 
 header {
+    position: relative;
+    z-index: 1;
+
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-area: header;
