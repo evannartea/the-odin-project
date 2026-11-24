@@ -221,7 +221,7 @@ main {
     background-color: var(--primary-grey);
 }
 
-main section > h3 {
+h3, h4 {
     margin: 0;
 }
 
