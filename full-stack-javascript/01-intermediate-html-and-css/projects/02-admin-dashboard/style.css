@@ -316,6 +316,7 @@ main {
     flex: 1;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
     width: 100%;
 
@@ -324,11 +325,13 @@ main {
 }
 
 .announcement-header {
-
+    font-size: 0.9em;
 }
 
-.announcement-body {
-
+.announcement-body,
+.trending-project {
+    font-size: 0.8em;
+    color: darkgray;
 }
 
 /* ----- Trending Section ----- */
@@ -364,7 +367,3 @@ main {
     font-size: 0.8em;
 }
 
-.trending-project {
-    font-size: 0.8em;
-    color: darkgray;
-}
